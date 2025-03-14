@@ -8,6 +8,7 @@ import Research from "./Research";
 import RecentPubs from "./RecentPubs";
 import ActiveMem from "./ActiveMem";
 import Footer from "../components/Footer";
+import Funding from "./Funding";
 
 const Home = () => {
   return (
@@ -26,7 +27,10 @@ const Home = () => {
       <section id="members">
         <ActiveMem />
       </section>
-      {/* <DarkModeToggle /> */}
+      <section id="funding">
+        <Funding />
+      </section>
+      <DarkModeToggle />
       <Footer />
     </div>
   );

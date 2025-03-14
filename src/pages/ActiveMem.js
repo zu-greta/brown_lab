@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 
+import placeholder from '../assets/placeholder.jpg';
+
 const ActiveMem = () => {
     const sectionStyle = {
         display: 'flex',
@@ -26,7 +28,7 @@ const ActiveMem = () => {
     return (
         <div style={sectionStyle}>
             <div style={imageStyle}>
-                <img src="https://via.placeholder.com/350" alt="Team members" style={{ width: '100%', borderRadius: '10px' }} />
+                <img src={placeholder} alt="Team members" style={{ width: '100%', borderRadius: '10px' }} />
             </div>
             <div style={descriptionStyle}>
                 <h2>Our Members</h2>

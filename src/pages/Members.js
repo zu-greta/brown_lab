@@ -5,6 +5,9 @@ import Col from "react-bootstrap/Col";
 import Navbar from "../components/NavBar";
 import MemberCard from "../components/MemberCard";
 import Footer from "../components/Footer";
+import DarkModeToggle from "../components/DarkModeToggle";
+
+import placeholder from "../assets/placeholder.jpg";
 
 const Members = () => {
   const activeMembers = [
@@ -12,21 +15,21 @@ const Members = () => {
       title: "Director",
       name: "Dr. Brown",
       extraInfo: "Research Lead",
-      image: "/images/brown.jpg",
+      image: {placeholder},
       bio: "Dr. Brown is the principal investigator of the lab, specializing in neuroscience and physiology.",
     },
     {
       title: "PhD Candidate",
       name: "John Doe",
       extraInfo: "Machine Learning & Physiology",
-      image: "/images/john.jpg",
+      image: {placeholder},
       bio: "John applies deep learning techniques to analyze physiological data.",
     },
     {
         title: "PhD Candidate",
         name: "Jane Doe",
         extraInfo: "Machine Learning & Physiology",
-        image: "/images/jane.jpg",
+        image: {placeholder},
         bio: "Jane specializes in applying deep learning to cardiovascular data analysis.",
     },
   ];
@@ -36,14 +39,14 @@ const Members = () => {
       title: "Postdoctoral Researcher",
       name: "Dr. Smith",
       extraInfo: "Neuroscience",
-      image: "/images/smith.jpg",
+      image: {placeholder},
       bio: "Dr. Smith worked on brain-computer interfaces and advanced neural technologies.",
     },
     {
       title: "PhD Candidate",
       name: "Michael Johnson",
       extraInfo: "Data Science & Physiology",
-      image: "/images/michael.jpg",
+      image: {placeholder},
       bio: "Michael focused on the intersection of data science and human physiology.",
     },
   ];
@@ -77,6 +80,7 @@ const Members = () => {
           ))}
         </Row>
       </Container>
+      <DarkModeToggle />
       <Footer />
     </div>
   );

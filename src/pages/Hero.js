@@ -6,6 +6,8 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
+import placeholder from '../assets/placeholder.jpg';
+
 const Hero = () => {
     const backStyle = {
         color: 'white',
@@ -39,7 +41,7 @@ const Hero = () => {
                     {/* Right Section: Image */}
                     <Col md={6} className="text-center">
                         <Image
-                            src="/assets/placeholder.jpg"  // TODO - Replace with actual image
+                            src={placeholder}  // TODO - Replace with actual image
                             alt="Brown Lab"
                             fluid
                             rounded

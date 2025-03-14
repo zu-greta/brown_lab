@@ -16,6 +16,7 @@ function bar() {
             <Nav.Link href="/brown_lab/#overview">Lab Overview</Nav.Link>
             <Nav.Link href="/brown_lab/#research">Research Areas</Nav.Link>
             <Nav.Link href="/brown_lab/#publications">Recent Publications</Nav.Link>
+            <Nav.Link href="/brown_lab/#funding">Funding Orgs</Nav.Link>
           </Nav>
           <Nav>
             <NavDropdown title="Publications/Members" id="collapsible-nav-dropdown">

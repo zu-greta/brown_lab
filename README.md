@@ -16,3 +16,8 @@ That build deploy to the github pages.\
 Open [https://zu-greta.github.io/brown_lab/](https://zu-greta.github.io/brown_lab/) to view it in your browser.
 
 ---
+
+In case of problems:
+rm -rf node_modules package-lock.json
+npm install
+npm start

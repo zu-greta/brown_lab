@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/NavBar";
 import PublicationCard from "../components/PublicationCard";
 import Footer from "../components/Footer";
+import DarkModeToggle from "../components/DarkModeToggle";
 
 const Publications = () => {
   // Sample publication data
@@ -53,6 +54,7 @@ const Publications = () => {
               />
             </div>
           ))}
+              <DarkModeToggle />
         </div>
       </div>
         <Footer />

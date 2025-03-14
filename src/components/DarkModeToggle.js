@@ -18,7 +18,8 @@ const DarkModeToggle = () => {
 
   return (
     <Button variant="outline-dark" size="sm" onClick={() => setDarkMode(!darkMode)}
-    className="fixed bottom-4 left-4 bg-gray-300 dark:bg-gray-700 text-gray-900 dark:text-white px-4 py-2 rounded-lg shadow-md"
+    className="fixed bottom-4 left-4 z-50 bg-gray-300 dark:bg-gray-700 text-gray-900 dark:text-white px-4 py-2 rounded-lg shadow-md"
+    style={{ position: "fixed", bottom: "20px", left: "20px", zIndex: 1000 }}
   >
     {darkMode ? "Light Mode" : "Dark Mode"}
   </Button>

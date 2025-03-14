@@ -1,26 +1,7 @@
-// import React from "react";
-
-// const Overview = () => {
-//     const backStyle = {
-//         color: 'white',
-//         fontSize: '20px',
-//         backgroundColor: 'rgb(125, 184, 197)',
-//         padding: '60px 0'
-//     };
-
-//     return (
-//         <div style={backStyle}>
-//             <p>Overview</p>
-//         </div>
-//     );
-// };
-
-// export default Overview;
-
-// components/Overview.js
-
 import React from "react";
 import { Carousel } from 'react-bootstrap';
+
+import placeholder from '../assets/placeholder.jpg';
 
 const Overview = () => {
     const backStyle = {
@@ -33,7 +14,6 @@ const Overview = () => {
 
     const sectionStyle = {
         padding: '40px 20px',
-        margin: '20px 0',
         backgroundColor: 'rgb(125, 184, 197)',
         display: 'flex',
         alignItems: 'center',
@@ -67,7 +47,7 @@ const Overview = () => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src="https://via.placeholder.com/600x400"
+                                src={placeholder}
                                 alt="First slide"
                             />
                             <Carousel.Caption>
@@ -78,7 +58,7 @@ const Overview = () => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src="https://via.placeholder.com/600x400"
+                                src={placeholder}
                                 alt="Second slide"
                             />
                             <Carousel.Caption>
@@ -89,7 +69,7 @@ const Overview = () => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src="https://via.placeholder.com/600x400"
+                                src={placeholder}
                                 alt="Third slide"
                             />
                             <Carousel.Caption>
