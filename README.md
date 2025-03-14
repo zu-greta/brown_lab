@@ -14,3 +14,5 @@ In the project directory, you can run:
 
 That build deploy to the github pages.\
 Open [https://zu-greta.github.io/brown_lab/](https://zu-greta.github.io/brown_lab/) to view it in your browser.
+
+---
