@@ -2,12 +2,14 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Navbar from "../components/NavBar";
+// import Navbar from "../components/NavBar";
+import NavBarPerm from "../components/NavBarPerm";
 import MemberCard from "../components/MemberCard";
 import Footer from "../components/Footer";
 import DarkModeToggle from "../components/DarkModeToggle";
 
 import placeholder from "../assets/placeholder.jpg";
+import Alumni from "../components/Almuni";
 
 const Members = () => {
   const activeMembers = [
@@ -15,21 +17,21 @@ const Members = () => {
       title: "Director",
       name: "Dr. Brown",
       extraInfo: "Research Lead",
-      image: {placeholder},
+      image: placeholder,
       bio: "Dr. Brown is the principal investigator of the lab, specializing in neuroscience and physiology.",
     },
     {
       title: "PhD Candidate",
       name: "John Doe",
       extraInfo: "Machine Learning & Physiology",
-      image: {placeholder},
+      image: placeholder,
       bio: "John applies deep learning techniques to analyze physiological data.",
     },
     {
         title: "PhD Candidate",
         name: "Jane Doe",
         extraInfo: "Machine Learning & Physiology",
-        image: {placeholder},
+        image: placeholder,
         bio: "Jane specializes in applying deep learning to cardiovascular data analysis.",
     },
   ];
@@ -39,21 +41,24 @@ const Members = () => {
       title: "Postdoctoral Researcher",
       name: "Dr. Smith",
       extraInfo: "Neuroscience",
-      image: {placeholder},
+      image: placeholder,
       bio: "Dr. Smith worked on brain-computer interfaces and advanced neural technologies.",
+      year: "2021",
     },
     {
       title: "PhD Candidate",
       name: "Michael Johnson",
       extraInfo: "Data Science & Physiology",
-      image: {placeholder},
+      image: placeholder,
       bio: "Michael focused on the intersection of data science and human physiology.",
+      year: "2020",
     },
   ];
 
   return (
     <div>
-      <Navbar />
+      <NavBarPerm />
+      {/* <Navbar /> */}
       <Container className="py-5">
         <h1>Brown Lab Member Directory</h1>
         <p className="text-muted">Meet the members of the lab</p>
@@ -75,7 +80,7 @@ const Members = () => {
         <Row>
           {alumniMembers.map((member, index) => (
             <Col key={index} xs={12} md={6} className="mb-4">
-              <MemberCard {...member} />
+              <Alumni {...member} />
             </Col>
           ))}
         </Row>

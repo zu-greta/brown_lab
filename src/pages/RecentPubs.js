@@ -4,10 +4,10 @@ import PublicationCard from "../components/PublicationCard";  // Assuming you ha
 
 const RecentPubs = () => {
     const backStyle = {
-        color: 'black',
+        color: 'white',
         // fontSize: '20px',
-        backgroundColor: 'rgb(125, 184, 197)',
-        padding: '60px 0'
+        backgroundColor: 'rgb(43, 52, 54)',
+        padding: '6vh 10vh',
     };
 
     return (

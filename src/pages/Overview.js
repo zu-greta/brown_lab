@@ -1,5 +1,6 @@
 import React from "react";
-import { Carousel } from 'react-bootstrap';
+// import { Carousel } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image';
 
 import placeholder from '../assets/placeholder.jpg';
 
@@ -7,14 +8,15 @@ const Overview = () => {
     const backStyle = {
         color: 'white',
         fontSize: '20px',
-        backgroundColor: 'rgb(125, 184, 197)',
-        padding: '60px 0',
-        textAlign: 'center',
+        backgroundColor: 'rgb(50, 40, 61)',
+        padding: '6vh 10vh',
+        textAlign: 'left',
     };
 
     const sectionStyle = {
-        padding: '40px 20px',
-        backgroundColor: 'rgb(125, 184, 197)',
+        color: 'white',
+        padding: '6vh 10vh',
+        backgroundColor: 'rgb(33, 37, 37)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -24,60 +26,52 @@ const Overview = () => {
         width: '45%',
         fontSize: '18px',
         lineHeight: '1.6',
-        color: '#333',
     };
 
     return (
         <div>
             <div style={backStyle}>
-                <h1>Lab Overview</h1>
+                <h1>About Us</h1>
             </div>
 
             {/* Overview Section */}
             <div style={sectionStyle}>
                 <div style={descriptionStyle}>
-                    <h3>About Our Lab</h3>
+                    <h3>Mission</h3>
+                    {/* horizontal seperator */}
+                    <hr style={{ width: '50%', textAlign: 'left' }} />
                     <p>
-                        Welcome to our lab! ...
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        ac felis non eros lacinia ultricies. Donec id aliquet nunc. In
+                        hac habitasse platea dictumst. Nullam nec nisl ac nunc
+                    </p>
+                    <br />
+                    <h3>Core Values</h3>
+                    {/* horizontal seperator */}
+                    <hr style={{ width: '50%', textAlign: 'left' }} />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        ac felis non eros lacinia ultricies. Donec id aliquet nunc. In
+                        hac habitasse platea dictumst. Nullam nec nisl ac nunc
+                    </p>
+                    <br />
+                    <h3>Research Areas</h3>
+                    {/* horizontal seperator */}
+                    <hr style={{ width: '50%', textAlign: 'left' }} />
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                        ac felis non eros lacinia ultricies. Donec id aliquet nunc. In
+                        hac habitasse platea dictumst. Nullam nec nisl ac nunc
                     </p>
                 </div>
 
                 <div style={{ width: '45%' }}>
-                    <Carousel>
-                        <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src={placeholder}
-                                alt="First slide"
-                            />
-                            <Carousel.Caption>
-                                <h5>Research Image 1</h5>
-                                <p>Exploring new AI technologies.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src={placeholder}
-                                alt="Second slide"
-                            />
-                            <Carousel.Caption>
-                                <h5>Research Image 2</h5>
-                                <p>Machine learning in action.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                        <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src={placeholder}
-                                alt="Third slide"
-                            />
-                            <Carousel.Caption>
-                                <h5>Research Image 3</h5>
-                                <p>Collaborating on data science projects.</p>
-                            </Carousel.Caption>
-                        </Carousel.Item>
-                    </Carousel>
+                    <Image
+                        src={placeholder}  // TODO - Replace with actual image
+                        alt="Brown Lab"
+                        fluid
+                        rounded
+                    />
                 </div>
             </div>
         </div>

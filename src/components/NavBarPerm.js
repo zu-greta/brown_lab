@@ -13,9 +13,7 @@ function bar() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/brown_lab/#overview">Lab Overview</Nav.Link>
-            <Nav.Link href="/brown_lab/#publications">Recent Publications</Nav.Link>
-            <Nav.Link href="/brown_lab/#projects">Current Projects</Nav.Link>
+
           </Nav>
           <Nav>
             <NavDropdown title="Projects/Publications" id="collapsible-nav-dropdown">

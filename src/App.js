@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Publications from "./pages/Publications";
 import Members from "./pages/Members";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Projects from './pages/Projects';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/publications" element={<Publications />} />
         <Route path="/members" element={<Members />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </Router>
   );

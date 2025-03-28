@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import Navbar from "../components/NavBar";
+// import Navbar from "../components/NavBar";
+import NavBarPerm from "../components/NavBarPerm";
 import PublicationCard from "../components/PublicationCard";
 import Footer from "../components/Footer";
 import DarkModeToggle from "../components/DarkModeToggle";
+import { col } from "framer-motion/client";
 
 const Publications = () => {
   // Sample publication data
@@ -24,7 +26,8 @@ const Publications = () => {
 
   return (
     <div>
-      <Navbar />
+      <NavBarPerm />
+      {/* <Navbar /> */}
       <div style={styles.container}>
         {/* Search bar */}
         <input
@@ -65,6 +68,8 @@ const Publications = () => {
 const styles = {
   container: {
     padding: "60px",
+    colour: "white",
+    backgroundColor: "rgb(35, 36, 39)",
   },
   searchBar: {
     width: "100%",
@@ -75,6 +80,7 @@ const styles = {
   },
   publicationsList: {
     display: "flex",
+    color: "white",
     flexDirection: "column",
     alignItems: "flex-start",
   },

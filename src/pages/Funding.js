@@ -25,7 +25,7 @@ const fundingOrganizations = [
 
 const Funding = () => {
   return (
-    <div style={{ backgroundColor: "rgb(175, 165, 152)", padding: "60px 0" }}>
+    <div style={{ backgroundColor: "rgb(0, 0, 0)", padding: "60px 0" }}>
       <Container>
         <h2 className="text-center text-white mb-4">Funding Organizations</h2>
         <Row className="justify-content-center">
