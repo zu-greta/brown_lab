@@ -6,10 +6,12 @@ import Col from "react-bootstrap/Col";
 import NavBarPerm from "../components/NavBarPerm";
 import MemberCard from "../components/MemberCard";
 import Footer from "../components/Footer";
-import DarkModeToggle from "../components/DarkModeToggle";
+import Join from "../components/Join";
+import Alumni from "../components/Almuni";
 
 import placeholder from "../assets/placeholder.jpg";
-import Alumni from "../components/Almuni";
+import claire from "../assets/claire_brown.jpg";
+
 
 const Members = () => {
   const activeMembers = [
@@ -19,6 +21,7 @@ const Members = () => {
       extraInfo: "Research Lead",
       image: placeholder,
       bio: "Dr. Brown is the principal investigator of the lab, specializing in neuroscience and physiology.",
+      contact: "linkdin.com/in/drbrown",
     },
     {
       title: "PhD Candidate",
@@ -26,6 +29,7 @@ const Members = () => {
       extraInfo: "Machine Learning & Physiology",
       image: placeholder,
       bio: "John applies deep learning techniques to analyze physiological data.",
+      contact: "linkdin.com/in/johndoe",
     },
     {
         title: "PhD Candidate",
@@ -33,6 +37,7 @@ const Members = () => {
         extraInfo: "Machine Learning & Physiology",
         image: placeholder,
         bio: "Jane specializes in applying deep learning to cardiovascular data analysis.",
+        contact: "linkdin.com/in/janedoe",
     },
   ];
 
@@ -44,6 +49,8 @@ const Members = () => {
       image: placeholder,
       bio: "Dr. Smith worked on brain-computer interfaces and advanced neural technologies.",
       year: "2021",
+      contact: "linkdin.com/in/drsmith",
+      current: "linkdin.com/in/drsmith/current-position",
     },
     {
       title: "PhD Candidate",
@@ -52,16 +59,39 @@ const Members = () => {
       image: placeholder,
       bio: "Michael focused on the intersection of data science and human physiology.",
       year: "2020",
+      contact: "linkdin.com/in/michaeljohnson",
+      current: "linkdin.com/in/michaeljohnson/current-position",
     },
   ];
 
+  const claireBrown = [{
+    title: "Professor & Director",
+    name: "Dr. Claire Brown",
+    extraInfo: "Research Lead",
+    image: claire,
+    bio: "I have been working in the field of quantitative bioimaging for over 25 years. My research has focused on applying biophysical techniques to fluorescence microscopy images to extract quantitative data measuring protein distributions, dynamics and interactions. I have applied these techniques to study proteins that regulate cell adhesion and migration to understand how migration is regulated at the molecular level in normal and diseased cellular systems. My research has also focused on optimizing live cell imaging to minimize phototoxicity and ensure the collection of high-fidelity data that is free of light induced artifacts. Quality control and standards for quantitative light microscopy have also been an important area of research. For 15 years, I have been directing the Advanced BioImaging Facility (ABIF) and developing and implementing active learning courses and workshops in fundamental and advanced light microscopy. In 2016, I also took over management of the Cell Imaging and Analysis Network (CIAN) light and the Cystic Fibrosis Translation Research Centre (CFTRc) light microscopes. Overall, I manage 18 research microscopes and a team of staff who provide high quality training and support for these advanced technologies.",
+    contact: "linkdin.com/in/drbrown",
+  },];
+
   return (
-    <div>
+    <div style={{backgroundColor: "rgb(33, 37, 37)", color: "white"}}>
       <NavBarPerm />
       {/* <Navbar /> */}
       <Container className="py-5">
         <h1>Brown Lab Member Directory</h1>
-        <p className="text-muted">Meet the members of the lab</p>
+        <p className="text-white">Meet the members of the lab!</p>
+
+      {/* Claire Brown Section */}
+      <h2>Claire Brown</h2>
+        <Row>
+          {claireBrown.map((member, index) => (
+            <Col key={index} xs={12} md={6} className="mb-4">
+              <MemberCard {...member} />
+            </Col>
+          ))}
+        </Row>
+
+        <hr style={{ borderTop: "2px solid #ccc", margin: "50px 0" }} />
 
         {/* Active Members Section */}
         <h2>Active Members</h2>
@@ -85,7 +115,7 @@ const Members = () => {
           ))}
         </Row>
       </Container>
-      <DarkModeToggle />
+      <Join />
       <Footer />
     </div>
   );

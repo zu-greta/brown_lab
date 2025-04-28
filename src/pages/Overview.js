@@ -5,14 +5,6 @@ import Image from 'react-bootstrap/Image';
 import placeholder from '../assets/placeholder.jpg';
 
 const Overview = () => {
-    const backStyle = {
-        color: 'white',
-        fontSize: '20px',
-        backgroundColor: 'rgb(50, 40, 61)',
-        padding: '6vh 10vh',
-        textAlign: 'left',
-    };
-
     const sectionStyle = {
         color: 'white',
         padding: '6vh 10vh',
@@ -30,13 +22,11 @@ const Overview = () => {
 
     return (
         <div>
-            <div style={backStyle}>
-                <h1>About Us</h1>
-            </div>
-
             {/* Overview Section */}
             <div style={sectionStyle}>
                 <div style={descriptionStyle}>
+                    <h1>About Us</h1>
+                    <br />
                     <h3>Mission</h3>
                     {/* horizontal seperator */}
                     <hr style={{ width: '50%', textAlign: 'left' }} />

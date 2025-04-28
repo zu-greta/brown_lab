@@ -5,24 +5,39 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 
-const MemberCard = ({ title, name, extraInfo, image, bio }) => {
+const MemberCard = ({ title, name, extraInfo, image, bio, contact }) => {
   const [show, setShow] = useState(false);
 
   return (
     <>
-      <Card className="my-3 p-3 shadow-sm">
-        <Card.Header className="bg-white border-bottom">
-          <h5 className="mb-0">{title}</h5>
+      {/* Member Card */}
+      <Card 
+        className="my-3 p-3 shadow-sm" 
+        style={{ backgroundColor: "rgb(44, 48, 48)", color: "white", border: "1px solid #ccc", borderRadius: "10px", }}
+      >
+        <Card.Header className="bg-transparent border-bottom">
+          <h5 className="mb-0" style={{ fontWeight: "bold", color: "lightgray" }}>{title}</h5>
         </Card.Header>
         <Card.Body>
           <Row>
-            <Col xs={4} md={3}>
-              <Card.Img variant="top" src={image} className="rounded-circle" />
+            <Col xs={4} md={3} className="d-flex align-items-center">
+              <Card.Img 
+                variant="top" 
+                src={image} 
+                className="rounded-circle" 
+                style={{ width: "100%", height: "100%", objectFit: "cover", border: "2px solid #ccc" }}
+              />
             </Col>
             <Col xs={8} md={9} className="d-flex flex-column justify-content-center">
-              <h4>{name}</h4>
-              <p className="text-muted">{extraInfo}</p>
-              <Button variant="outline-info" onClick={() => setShow(true)}>
+              <h4 style={{ fontWeight: "bold" }}>{name}</h4>
+              <p className="text-white mb-2">{extraInfo}</p>
+              < br />
+              <Button 
+                variant="outline-info" 
+                onClick={() => setShow(true)}
+                size="sm"
+                // style={{ alignSelf: "flex-start" }}
+              >
                 View Profile →
               </Button>
             </Col>
@@ -30,20 +45,46 @@ const MemberCard = ({ title, name, extraInfo, image, bio }) => {
         </Card.Body>
       </Card>
 
-      {/* Popup Modal */}
-      {/* TBD - modal or seperate page? */}
-      <Modal show={show} onHide={() => setShow(false)} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>{name}</Modal.Title>
+      {/* Modal */}
+      <Modal 
+        show={show} 
+        onHide={() => setShow(false)} 
+        centered 
+        size="lg"
+        contentClassName="bg-dark text-light"
+      >
+        <Modal.Header closeButton closeVariant="white" className="border-0">
+          <Modal.Title className="w-100 text-center" style={{ fontWeight: "bold", fontSize: "1.8rem" }}>
+            {name}
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Card.Img variant="top" src={image} className="rounded mb-3" />
-          <p>{bio}</p>
+          <Row>
+            <Col md={4} className="text-center mb-3 mb-md-0">
+              <img 
+                src={image} 
+                alt={name} 
+                className="rounded" 
+                style={{ width: "100%", objectFit: "cover", maxHeight: "300px" }}
+              />
+            </Col>
+            <Col md={8}>
+              <p style={{ lineHeight: "1.6" }}>{bio}</p>
+
+            </Col>
+          </Row>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShow(false)}>
-            Close
-          </Button>
+        <Modal.Footer className="border-0" style={{ justifyContent: "right", padding: "1rem" }}>
+        {contact && (
+                <Button 
+                  variant="outline-info" 
+                  href={contact} 
+                  target="_blank" 
+                  className="mt-3"
+                >
+                  Contact
+                </Button>
+              )}
         </Modal.Footer>
       </Modal>
     </>

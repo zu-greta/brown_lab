@@ -5,6 +5,7 @@ import Publications from "./pages/Publications";
 import Members from "./pages/Members";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Projects from './pages/Projects';
+import Join from './pages/Join';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/publications" element={<Publications />} />
         <Route path="/members" element={<Members />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/join" element={<Join />} />
       </Routes>
     </Router>
   );

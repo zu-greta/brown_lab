@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import NavBarPerm from "../components/NavBarPerm";
 import PublicationCard from "../components/PublicationCard";
 import Footer from "../components/Footer";
-import DarkModeToggle from "../components/DarkModeToggle";
-import { col } from "framer-motion/client";
+import Join from "../components/Join";
+// import { col } from "framer-motion/client";
 
 const Publications = () => {
   // Sample publication data
@@ -57,7 +57,7 @@ const Publications = () => {
               />
             </div>
           ))}
-              <DarkModeToggle />
+              <Join />
         </div>
       </div>
         <Footer />
@@ -69,7 +69,7 @@ const styles = {
   container: {
     padding: "60px",
     colour: "white",
-    backgroundColor: "rgb(35, 36, 39)",
+    backgroundColor: 'rgb(33, 37, 37)',
   },
   searchBar: {
     width: "100%",

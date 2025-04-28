@@ -4,7 +4,7 @@ import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
     const footerStyle = {
-        backgroundColor: '#333',
+        backgroundColor: 'rgb(43,48,54)',
         color: 'white',
         padding: '40px 0',
         bottom: '0',
@@ -52,7 +52,7 @@ const Footer = () => {
                 </Row>
                 <Row>
                     <Col className="text-center mt-4">
-                        <p>&copy; {new Date().getFullYear()} Your Lab Name. All Rights Reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} Brown Lab. All Rights Reserved.</p>
                     </Col>
                 </Row>
             </Container>

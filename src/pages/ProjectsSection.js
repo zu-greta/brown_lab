@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, Button, Badge } from "react-bootstrap";
-import { Link } from "react-router-dom";
+// import { Card, Button, Badge } from "react-bootstrap";
+// import { Link } from "react-router-dom";
 import ProjectCard from "../components/ProjectCard";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -17,13 +17,15 @@ const ProjectsSection = () => {
             description: "lorem ipsum",
             memberImage: placeholder,
             memberId: "jane-smith",
+            memberName: "Jane Smith",
         },
         {
             title: "Paxillin and regulation of cell migration",
-            status: "published",
+            status: "ongoing",
             description: "lorem ipsum",
             memberImage: placeholder,
             memberId: "jane-smith",
+            memberName: "Jane Smith",
         },
         {
             title: "Benchmarking STED and Expansion Microscopy",
@@ -31,16 +33,17 @@ const ProjectsSection = () => {
             description: "lorem ipsum",
             memberImage: placeholder,
             memberId: "jane-smith",
+            memberName: "Jane Smith",
         },
     ];
     
 
     return (
-        <div style={{ backgroundColor: "rgb(31, 30, 28)", padding: "60px 0" }}>
+        <div style={{ backgroundColor: 'rgb(33, 37, 37)', padding: "5% 0" }}>
         <Container>
           <h2 className="text-center text-white mb-4">Current Projects</h2>
             <Row className="justify-content-center">
-            {projectsData.map((org, index) => (  // FIX: remove extra []
+            {projectsData.map((org, index) => (  
                 <Col md={6} lg={4} key={index} className="mb-4">
                 <ProjectCard
                     title={org.title}
@@ -48,6 +51,7 @@ const ProjectsSection = () => {
                     description={org.description}
                     memberImage={org.memberImage}
                     memberId={org.memberId}
+                    memberName={org.memberName}
                 />
                 </Col>
             ))}

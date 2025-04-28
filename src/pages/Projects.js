@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NavBarPerm from "../components/NavBarPerm";
 import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer";
-import DarkModeToggle from "../components/DarkModeToggle";
+import Join from "../components/Join";
 import { Button } from "react-bootstrap";
 
 import placeholder from '../assets/placeholder.jpg';
@@ -25,7 +25,7 @@ const Projects = () => {
     },
   ];
 
-  const [search, setSearch] = useState("");
+  const [search] = useState("");
 
   const filteredProjects = projects.filter((proj) =>
     proj.title.toLowerCase().includes(search.toLowerCase()) ||
@@ -63,7 +63,7 @@ const Projects = () => {
               </div>
             </div>
           ))}
-          <DarkModeToggle />
+          <Join />
         </div>
       </div>
       <Footer />

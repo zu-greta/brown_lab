@@ -5,33 +5,43 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
+import czi from '../assets/CZI.png';
+import nserc from '../assets/NSERC.png';
+
 const fundingOrganizations = [
   {
-    name: "Canadian Institutes of Health Research (CIHR)",
-    description: "Funds health research to improve the well-being of Canadians.",
-    link: "https://cihr-irsc.gc.ca/",
+    name: "Chan Zuckerberg Initiative (CZI)",
+    description: "The Chan Zuckerberg Initiative supports the science and technology to make it possible to cure, prevent and manage all disease in this century.",
+    link: "https://chanzuckerberg.com/",
+    picture: czi
   },
   {
     name: "Natural Sciences and Engineering Research Council (NSERC)",
-    description: "Supports discovery and innovation in science and engineering.",
+    description: "Natural Sciences and Engineering Research Council of Canada",
     link: "https://www.nserc-crsng.gc.ca/",
-  },
-  {
-    name: "National Institutes of Health (NIH)",
-    description: "Largest funder of biomedical research in the world.",
-    link: "https://www.nih.gov/",
+    picture: nserc
   },
 ];
 
 const Funding = () => {
   return (
-    <div style={{ backgroundColor: "rgb(0, 0, 0)", padding: "60px 0" }}>
+    <div style={{ backgroundColor: 'rgb(33, 37, 37)', padding: "3% 0" }}>
       <Container>
         <h2 className="text-center text-white mb-4">Funding Organizations</h2>
         <Row className="justify-content-center">
           {fundingOrganizations.map((org, index) => (
-            <Col md={6} lg={4} key={index} className="mb-4">
-              <Card className="h-100 shadow-lg">
+            <Col md={6} lg={5} key={index} className="mb-4">
+              <Card 
+                className="h-100 shadow-lg text-white"
+                style={{
+                  backgroundColor: '#2c2f33',
+                  backgroundSize: 'cover',
+                  backgroundRepeat: 'no-repeat',
+                  border: "1px solid #ccc",
+                  borderRadius: "10px",
+                }}
+              >
+              <Card.Img variant="top" style = {{backgroundColor: "white", padding: "2%"}} src={org.picture} />
                 <Card.Body>
                   <Card.Title>{org.name}</Card.Title>
                   <Card.Text>{org.description}</Card.Text>

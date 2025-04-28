@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 
 import placeholder from '../assets/placeholder.jpg';
+import claire from '../assets/claire_brown.jpg';
 
 const ActiveMem = () => {
     const sectionStyle = {
@@ -10,7 +11,7 @@ const ActiveMem = () => {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: 'rgb(47, 45, 51)',
+        backgroundColor: 'rgb(33, 37, 37)',
         padding: '6vh 10vh',
         color: 'white',
         fontSize: '20px',
@@ -29,15 +30,16 @@ const ActiveMem = () => {
         <>
             <div style={sectionStyle}>
                 <div style={imageStyle}>
-                    <img src={placeholder} alt="Team members" style={{ width: '100%', borderRadius: '10px' }} />
+                    <img src={claire} alt="Claire Brown" style={{ width: '100%', borderRadius: '10px' }} />
                 </div>
                 <div style={descriptionStyle}>
                     <h2>Claire Brown</h2>
                     <p>
                         Section about Claire Brown. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac felis non eros lacinia ultricies. Donec id aliquet nunc. In hac habitasse platea dictumst. Nullam nec nisl ac nunc.
                     </p>
-                    <Link to="/members">
-                        <Button variant="outline-light" >See full profile →</Button>
+                    <Link to="/members"> 
+                    {/* TODO link to extra page for claire */}
+                        <Button variant="outline-info" >See full profile →</Button>
                     </Link>
                 </div>
             </div>
@@ -50,14 +52,14 @@ const ActiveMem = () => {
                         We work together on exciting projects and contribute to a collaborative environment that values creativity and innovation.
                     </p>
                     <Link to="/members">
-                        <Button variant="outline-light" >See All Members →</Button>
+                        <Button variant="outline-info" >See All Members →</Button>
                     </Link>
                     <br />
                     <br />
-                    {/* join the team */}
+                    {/* join the team
                     <Link to="/join">
                         <Button variant="outline-light" >Join Our Team →</Button>
-                    </Link>
+                    </Link> */}
                 </div>
                 <div style={imageStyle}>
                     <img src={placeholder} alt="Team members" style={{ width: '100%', borderRadius: '10px' }} />
