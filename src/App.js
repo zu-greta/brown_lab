@@ -10,6 +10,7 @@ import Join from './pages/Join';
 function App() {
   return (
     <Router basename="/brown_lab">
+    {/* <Router basename="zu-greta.github.io/brown_lab/"> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/publications" element={<Publications />} />

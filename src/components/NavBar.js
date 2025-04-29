@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from "react-router-dom";
 
 function bar() {
 
@@ -19,10 +20,12 @@ function bar() {
           </Nav>
           <Nav>
             <NavDropdown title="Projects/Publications" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="/brown_lab/projects">Projects</NavDropdown.Item>
-              <NavDropdown.Item href="/brown_lab/publications">Publications</NavDropdown.Item>
+              {/* <NavDropdown.Item href="https://zu-greta.github.io/brown_lab/projects">Projects</NavDropdown.Item>
+              <NavDropdown.Item href="https://zu-greta.github.io/brown_lab/publications">Publications</NavDropdown.Item> */}
+            <NavDropdown.Item> <Link to="/projects" style={{ color: "white", textDecoration: "none"}}>Projects</Link></NavDropdown.Item>
+            <NavDropdown.Item> <Link to="/publications" style={{ color: "white", textDecoration: "none"}}>Publications</Link></NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/brown_lab/members">Members</Nav.Link> 
+            <Nav.Link> <Link to="/members" style={{ color: "white", textDecoration: "none"}}>Members</Link></Nav.Link> 
             <NavDropdown title="Related Sites" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="https://www.mcgill.ca/abif/">ABIF</NavDropdown.Item>
               <NavDropdown.Item href="https://www.mcgill.ca/physiology/directory/core-faculty/claire-browns">Claire Brown</NavDropdown.Item>
