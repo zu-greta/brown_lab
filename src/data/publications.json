@@ -1,0 +1,634 @@
+{
+  "search_metadata": {
+    "id": "681045b7ed845675971c8c97",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/f74ae70aac37fe29/681045b7ed845675971c8c97.json",
+    "created_at": "2025-04-29 03:21:27 UTC",
+    "processed_at": "2025-04-29 03:21:27 UTC",
+    "google_scholar_author_url": "https://scholar.google.com/citations?user=OeSNGTQAAAAJ&hl=en",
+    "raw_html_file": "https://serpapi.com/searches/f74ae70aac37fe29/681045b7ed845675971c8c97.html",
+    "total_time_taken": 1.17
+  },
+  "search_parameters": {
+    "engine": "google_scholar_author",
+    "author_id": "OeSNGTQAAAAJ",
+    "hl": "en"
+  },
+  "author": {
+    "name": "Claire Brown",
+    "affiliations": "McGill University",
+    "email": "Verified email at mcgill.ca",
+    "website": "http://www.mcgill.ca/abif",
+    "interests": [
+      {
+        "title": "microscopy",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:microscopy",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Amicroscopy"
+      },
+      {
+        "title": "imaging",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:imaging",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Aimaging"
+      },
+      {
+        "title": "dynamics",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:dynamics",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Adynamics"
+      },
+      {
+        "title": "Quantitative",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:quantitative",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Aquantitative"
+      },
+      {
+        "title": "live cell",
+        "link": "https://scholar.google.com/citations?view_op=search_authors&hl=en&mauthors=label:live_cell",
+        "serpapi_link": "https://serpapi.com/search.json?engine=google_scholar_profiles&hl=en&mauthors=label%3Alive_cell"
+      }
+    ],
+    "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=OeSNGTQAAAAJ&citpid=6"
+  },
+  "articles": [
+    {
+      "title": "Measuring fast dynamics in solutions and cells with a laser scanning microscope",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:u5HHmVD_uO8C",
+      "citation_id": "OeSNGTQAAAAJ:u5HHmVD_uO8C",
+      "authors": "MA Digman, CM Brown, P Sengupta, PW Wiseman, AR Horwitz, E Gratton",
+      "publication": "Biophysical journal 89 (2), 1317-1327, 2005",
+      "cited_by": {
+        "value": 564,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12149531606291831641",
+        "serpapi_link": "https://serpapi.com/search.json?cites=12149531606291831641&engine=google_scholar&hl=en",
+        "cites_id": "12149531606291831641"
+      },
+      "year": "2005"
+    },
+    {
+      "title": "Tutorial: guidance for quantitative confocal microscopy",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:LjlpjdlvIbIC",
+      "citation_id": "OeSNGTQAAAAJ:LjlpjdlvIbIC",
+      "authors": "J Jonkman, CM Brown, GD Wright, KI Anderson, AJ North",
+      "publication": "Nature protocols 15 (5), 1585-1611, 2020",
+      "cited_by": {
+        "value": 409,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4470534664724869176",
+        "serpapi_link": "https://serpapi.com/search.json?cites=4470534664724869176&engine=google_scholar&hl=en",
+        "cites_id": "4470534664724869176"
+      },
+      "year": "2020"
+    },
+    {
+      "title": "Live-cell microscopy–tips and tools",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:2osOgNQ5qMEC",
+      "citation_id": "OeSNGTQAAAAJ:2osOgNQ5qMEC",
+      "authors": "MM Frigault, J Lacoste, JL Swift, CM Brown",
+      "publication": "Journal of cell science 122 (6), 753-767, 2009",
+      "cited_by": {
+        "value": 405,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=7074754066066768671",
+        "serpapi_link": "https://serpapi.com/search.json?cites=7074754066066768671&engine=google_scholar&hl=en",
+        "cites_id": "7074754066066768671"
+      },
+      "year": "2009"
+    },
+    {
+      "title": "Paxillin phosphorylation at Ser273 localizes a GIT1–PIX–PAK complex and regulates adhesion and protrusion dynamics",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:u-x6o8ySG0sC",
+      "citation_id": "OeSNGTQAAAAJ:u-x6o8ySG0sC",
+      "authors": "A Nayal, DJ Webb, CM Brown, EM Schaefer, M Vicente-Manzanares, ...",
+      "publication": "The Journal of cell biology 173 (4), 587-589, 2006",
+      "cited_by": {
+        "value": 392,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6631322508510008840",
+        "serpapi_link": "https://serpapi.com/search.json?cites=6631322508510008840&engine=google_scholar&hl=en",
+        "cites_id": "6631322508510008840"
+      },
+      "year": "2006"
+    },
+    {
+      "title": "Measuring and interpreting point spread functions to determine confocal microscope resolution and ensure quality control",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:UeHWp8X0CEIC",
+      "citation_id": "OeSNGTQAAAAJ:UeHWp8X0CEIC",
+      "authors": "RW Cole, T Jinadasa, CM Brown",
+      "publication": "Nature protocols 6 (12), 1929-1941, 2011",
+      "cited_by": {
+        "value": 391,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14803749662785336230",
+        "serpapi_link": "https://serpapi.com/search.json?cites=14803749662785336230&engine=google_scholar&hl=en",
+        "cites_id": "14803749662785336230"
+      },
+      "year": "2011"
+    },
+    {
+      "title": "Dorsal horn parvalbumin neurons are gate-keepers of touch-evoked pain after nerve injury",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:ULOm3_A8WrAC",
+      "citation_id": "OeSNGTQAAAAJ:ULOm3_A8WrAC",
+      "authors": "H Petitjean, SA Pawlowski, SL Fraine, B Sharif, D Hamad, T Fatima, ...",
+      "publication": "Cell reports 13 (6), 1246-1257, 2015",
+      "cited_by": {
+        "value": 358,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=12887902819904982559",
+        "serpapi_link": "https://serpapi.com/search.json?cites=12887902819904982559&engine=google_scholar&hl=en",
+        "cites_id": "12887902819904982559"
+      },
+      "year": "2015"
+    },
+    {
+      "title": "Direct interorganellar transfer of iron from endosome to mitochondrion",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:35N4QoGY0k4C",
+      "citation_id": "OeSNGTQAAAAJ:35N4QoGY0k4C",
+      "authors": "AD Sheftel, AS Zhang, C Brown, OS Shirihai, P Ponka",
+      "publication": "Blood, The Journal of the American Society of Hematology 110 (1), 125-132, 2007",
+      "cited_by": {
+        "value": 334,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6061730438576624021",
+        "serpapi_link": "https://serpapi.com/search.json?cites=6061730438576624021&engine=google_scholar&hl=en",
+        "cites_id": "6061730438576624021"
+      },
+      "year": "2007"
+    },
+    {
+      "title": "Spatial mapping of integrin interactions and dynamics during cell migration by image correlation microscopy",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:d1gkVwhDpl0C",
+      "citation_id": "OeSNGTQAAAAJ:d1gkVwhDpl0C",
+      "authors": "PW Wiseman, CM Brown, DJ Webb, B Hebert, NL Johnson, JA Squier, ...",
+      "publication": "Journal of cell science 117 (23), 5521-5534, 2004",
+      "cited_by": {
+        "value": 304,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16411306064619260039",
+        "serpapi_link": "https://serpapi.com/search.json?cites=16411306064619260039&engine=google_scholar&hl=en",
+        "cites_id": "16411306064619260039"
+      },
+      "year": "2004"
+    },
+    {
+      "title": "Any way you slice it—a comparison of confocal microscopy techniques",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:Wp0gIr-vW9MC",
+      "citation_id": "OeSNGTQAAAAJ:Wp0gIr-vW9MC",
+      "authors": "J Jonkman, CM Brown",
+      "publication": "Journal of biomolecular techniques: JBT 26 (2), 54, 2015",
+      "cited_by": {
+        "value": 288,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=16573913582091740764",
+        "serpapi_link": "https://serpapi.com/search.json?cites=16573913582091740764&engine=google_scholar&hl=en",
+        "cites_id": "16573913582091740764"
+      },
+      "year": "2015"
+    },
+    {
+      "title": "Fluctuation correlation spectroscopy with a laser-scanning microscope: exploiting the hidden time structure",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:9yKSN-GCB0IC",
+      "citation_id": "OeSNGTQAAAAJ:9yKSN-GCB0IC",
+      "authors": "MA Digman, P Sengupta, PW Wiseman, CM Brown, AR Horwitz, E Gratton",
+      "publication": "Biophysical journal 88 (5), L33-L36, 2005",
+      "cited_by": {
+        "value": 279,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4088085777285337432",
+        "serpapi_link": "https://serpapi.com/search.json?cites=4088085777285337432&engine=google_scholar&hl=en",
+        "cites_id": "4088085777285337432"
+      },
+      "year": "2005"
+    },
+    {
+      "title": "Raster image correlation spectroscopy (RICS) for measuring fast protein dynamics and concentrations with a commercial laser scanning confocal microscope",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:IjCSPb-OGe4C",
+      "citation_id": "OeSNGTQAAAAJ:IjCSPb-OGe4C",
+      "authors": "CM Brown, RB Dalal, B Hebert, MA Digman, AR Horwitz, E Gratton",
+      "publication": "Journal of microscopy 229 (1), 78-91, 2008",
+      "cited_by": {
+        "value": 234,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10686399927100170241",
+        "serpapi_link": "https://serpapi.com/search.json?cites=10686399927100170241&engine=google_scholar&hl=en",
+        "cites_id": "10686399927100170241"
+      },
+      "year": "2008"
+    },
+    {
+      "title": "Probing the integrin-actin linkage using high-resolution protein velocity mapping",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:qjMakFHDy7sC",
+      "citation_id": "OeSNGTQAAAAJ:qjMakFHDy7sC",
+      "authors": "CM Brown, B Hebert, DL Kolin, J Zareno, L Whitmore, AR Horwitz, ...",
+      "publication": "Journal of cell science 119 (24), 5204-5214, 2006",
+      "cited_by": {
+        "value": 217,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=3032158706702605928",
+        "serpapi_link": "https://serpapi.com/search.json?cites=3032158706702605928&engine=google_scholar&hl=en",
+        "cites_id": "3032158706702605928"
+      },
+      "year": "2006"
+    },
+    {
+      "title": "Fluorescence resonance energy transfer microscopy as demonstrated by measuring the activation of the serine/threonine kinase Akt",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:Se3iqnhoufwC",
+      "citation_id": "OeSNGTQAAAAJ:Se3iqnhoufwC",
+      "authors": "JA Broussard, B Rappaz, DJ Webb, CM Brown",
+      "publication": "Nature protocols 8 (2), 265, 2013",
+      "cited_by": {
+        "value": 209,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14626205323847916044",
+        "serpapi_link": "https://serpapi.com/search.json?cites=14626205323847916044&engine=google_scholar&hl=en",
+        "cites_id": "14626205323847916044"
+      },
+      "year": "2013"
+    },
+    {
+      "title": "Paxillin dynamics measured during adhesion assembly and disassembly by correlation spectroscopy",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:zYLM7Y9cAGgC",
+      "citation_id": "OeSNGTQAAAAJ:zYLM7Y9cAGgC",
+      "authors": "MA Digman, CM Brown, AR Horwitz, WW Mantulin, E Gratton",
+      "publication": "Biophysical journal 94 (7), 2819-2831, 2008",
+      "cited_by": {
+        "value": 180,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14326915478359534563",
+        "serpapi_link": "https://serpapi.com/search.json?cites=14326915478359534563&engine=google_scholar&hl=en",
+        "cites_id": "14326915478359534563"
+      },
+      "year": "2008"
+    },
+    {
+      "title": "Localization of AMP kinase is regulated by stress, cell density, and signaling through the MEK→ ERK1/2 pathway",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:YsMSGLbcyi4C",
+      "citation_id": "OeSNGTQAAAAJ:YsMSGLbcyi4C",
+      "authors": "M Kodiha, JG Rassi, CM Brown, U Stochaj",
+      "publication": "American Journal of Physiology-Cell Physiology 293 (5), C1427-C1436, 2007",
+      "cited_by": {
+        "value": 173,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=14608617627280508569",
+        "serpapi_link": "https://serpapi.com/search.json?cites=14608617627280508569&engine=google_scholar&hl=en",
+        "cites_id": "14608617627280508569"
+      },
+      "year": "2007"
+    },
+    {
+      "title": "Epi-fluorescence microscopy",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:MXK_kJrjxJIC",
+      "citation_id": "OeSNGTQAAAAJ:MXK_kJrjxJIC",
+      "authors": "DJ Webb, CM Brown",
+      "publication": "Cell imaging techniques: methods and protocols, 29-59, 2012",
+      "cited_by": {
+        "value": 145,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=10772729919891555293",
+        "serpapi_link": "https://serpapi.com/search.json?cites=10772729919891555293&engine=google_scholar&hl=en",
+        "cites_id": "10772729919891555293"
+      },
+      "year": "2012"
+    },
+    {
+      "title": "Illuminating adhesion complexes in migrating cells: moving toward a bright future",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:Tyk-4Ss8FVUC",
+      "citation_id": "OeSNGTQAAAAJ:Tyk-4Ss8FVUC",
+      "authors": "DJ Webb, CM Brown, AF Horwitz",
+      "publication": "Current opinion in cell biology 15 (5), 614-620, 2003",
+      "cited_by": {
+        "value": 132,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=2578704020609208890",
+        "serpapi_link": "https://serpapi.com/search.json?cites=2578704020609208890&engine=google_scholar&hl=en",
+        "cites_id": "2578704020609208890"
+      },
+      "year": "2003"
+    },
+    {
+      "title": "Fluorescence microscopy-avoiding the pitfalls",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:ufrVoPGSRksC",
+      "citation_id": "OeSNGTQAAAAJ:ufrVoPGSRksC",
+      "authors": "CM Brown",
+      "publication": "Journal of cell science 120 (10), 1703-1705, 2007",
+      "cited_by": {
+        "value": 127,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=5632668433190010602",
+        "serpapi_link": "https://serpapi.com/search.json?cites=5632668433190010602&engine=google_scholar&hl=en",
+        "cites_id": "5632668433190010602"
+      },
+      "year": "2007"
+    },
+    {
+      "title": "Optimizing live-cell fluorescence imaging conditions to minimize phototoxicity",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:5awf1xo2G04C",
+      "citation_id": "OeSNGTQAAAAJ:5awf1xo2G04C",
+      "authors": "A Kiepas, E Voorand, F Mubaid, PM Siegel, CM Brown",
+      "publication": "Journal of cell science 133 (4), jcs242834, 2020",
+      "cited_by": {
+        "value": 90,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=4812105598843296890",
+        "serpapi_link": "https://serpapi.com/search.json?cites=4812105598843296890&engine=google_scholar&hl=en",
+        "cites_id": "4812105598843296890"
+      },
+      "year": "2020"
+    },
+    {
+      "title": "Excitation light dose engineering to reduce photo-bleaching and photo-toxicity",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=OeSNGTQAAAAJ&citation_for_view=OeSNGTQAAAAJ:R3hNpaxXUhUC",
+      "citation_id": "OeSNGTQAAAAJ:R3hNpaxXUhUC",
+      "authors": "C Boudreau, TL Wee, YR Duh, MP Couto, KH Ardakani, CM Brown",
+      "publication": "Scientific reports 6 (1), 30892, 2016",
+      "cited_by": {
+        "value": 90,
+        "link": "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=9292989553966636063",
+        "serpapi_link": "https://serpapi.com/search.json?cites=9292989553966636063&engine=google_scholar&hl=en",
+        "cites_id": "9292989553966636063"
+      },
+      "year": "2016"
+    }
+  ],
+  "cited_by": {
+    "table": [
+      {
+        "citations": {
+          "all": 7025,
+          "since_2020": 2891
+        }
+      },
+      {
+        "h_index": {
+          "all": 38,
+          "since_2020": 27
+        }
+      },
+      {
+        "i10_index": {
+          "all": 61,
+          "since_2020": 53
+        }
+      }
+    ],
+    "graph": [
+      {
+        "year": 2004,
+        "citations": 23
+      },
+      {
+        "year": 2005,
+        "citations": 54
+      },
+      {
+        "year": 2006,
+        "citations": 77
+      },
+      {
+        "year": 2007,
+        "citations": 117
+      },
+      {
+        "year": 2008,
+        "citations": 197
+      },
+      {
+        "year": 2009,
+        "citations": 226
+      },
+      {
+        "year": 2010,
+        "citations": 247
+      },
+      {
+        "year": 2011,
+        "citations": 271
+      },
+      {
+        "year": 2012,
+        "citations": 261
+      },
+      {
+        "year": 2013,
+        "citations": 287
+      },
+      {
+        "year": 2014,
+        "citations": 342
+      },
+      {
+        "year": 2015,
+        "citations": 297
+      },
+      {
+        "year": 2016,
+        "citations": 345
+      },
+      {
+        "year": 2017,
+        "citations": 404
+      },
+      {
+        "year": 2018,
+        "citations": 411
+      },
+      {
+        "year": 2019,
+        "citations": 452
+      },
+      {
+        "year": 2020,
+        "citations": 494
+      },
+      {
+        "year": 2021,
+        "citations": 599
+      },
+      {
+        "year": 2022,
+        "citations": 581
+      },
+      {
+        "year": 2023,
+        "citations": 491
+      },
+      {
+        "year": 2024,
+        "citations": 535
+      },
+      {
+        "year": 2025,
+        "citations": 186
+      }
+    ]
+  },
+  "public_access": {
+    "link": "https://scholar.google.com/citations?view_op=list_mandates&hl=en&user=OeSNGTQAAAAJ",
+    "available": 42,
+    "not_available": 0
+  },
+  "co_authors": [
+    {
+      "name": "Enrico Gratton",
+      "link": "https://scholar.google.com/citations?user=Pb-ZWXEAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=Pb-ZWXEAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "Pb-ZWXEAAAAJ",
+      "affiliations": "University of California, Irvine",
+      "email": "Verified email at uci.edu",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Michelle Digman",
+      "link": "https://scholar.google.com/citations?user=_s4lrL4AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=_s4lrL4AAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "_s4lrL4AAAAJ",
+      "affiliations": "University of California Irvine",
+      "email": "Verified email at uci.edu",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=_s4lrL4AAAAJ&citpid=2"
+    },
+    {
+      "name": "Richard Cole",
+      "link": "https://scholar.google.com/citations?user=V1L1bdAAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=V1L1bdAAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "V1L1bdAAAAAJ",
+      "affiliations": "NYS Dept. of Health, Wadsworth Center",
+      "email": "Verified email at health.ny.gov",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=V1L1bdAAAAAJ&citpid=1"
+    },
+    {
+      "name": "Tse Luen Wee",
+      "link": "https://scholar.google.com/citations?user=BgxJcJAAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=BgxJcJAAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "BgxJcJAAAAAJ",
+      "affiliations": "Cold Spring Harbor Laboratory",
+      "email": "Verified email at cshl.edu",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=BgxJcJAAAAAJ&citpid=4"
+    },
+    {
+      "name": "Paul W Wiseman",
+      "link": "https://scholar.google.com/citations?user=0XdoWQIAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=0XdoWQIAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "0XdoWQIAAAAJ",
+      "affiliations": "Professor of Chemistry, Professor of Physics, McGill University",
+      "email": "Verified email at mcgill.ca",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Tushare Jinadasa",
+      "link": "https://scholar.google.com/citations?user=k7-axiUAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=k7-axiUAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "k7-axiUAAAAJ",
+      "email": "Verified email at bu.edu",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "nils petersen",
+      "link": "https://scholar.google.com/citations?user=F3CAt34AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=F3CAt34AAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "F3CAt34AAAAJ",
+      "affiliations": "Professor of Chemistry, University of Alberta",
+      "email": "Verified email at ualberta.ca",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Parijat Sengupta",
+      "link": "https://scholar.google.com/citations?user=opLUqsoAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=opLUqsoAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "opLUqsoAAAAJ",
+      "affiliations": "University of Illinois at Chicago",
+      "email": "Verified email at illinois.edu",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=opLUqsoAAAAJ&citpid=2"
+    },
+    {
+      "name": "Prem Ponka",
+      "link": "https://scholar.google.com/citations?user=15qGDVIAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=15qGDVIAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "15qGDVIAAAAJ",
+      "affiliations": "Professor of Physiology, McGill University, Lady Davis Institute, Montreal, QC, Canada",
+      "email": "Verified email at mcgill.ca",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=15qGDVIAAAAJ&citpid=2"
+    },
+    {
+      "name": "Alex Sheftel",
+      "link": "https://scholar.google.com/citations?user=NR20Qx4AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=NR20Qx4AAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "NR20Qx4AAAAJ",
+      "affiliations": "Owner/Editor, High Impact Editing",
+      "email": "Verified email at mail.McGill.ca",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Graham D Wright",
+      "link": "https://scholar.google.com/citations?user=tSSzibQAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=tSSzibQAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "tSSzibQAAAAJ",
+      "affiliations": "Research Support Centre, A*STAR",
+      "email": "Verified email at rsc.a-star.edu.sg",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=tSSzibQAAAAJ&citpid=6"
+    },
+    {
+      "name": "Alexander Kiepas",
+      "link": "https://scholar.google.com/citations?user=pNwVexoAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=pNwVexoAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "pNwVexoAAAAJ",
+      "affiliations": "Postdoctoral Fellow, National Institutes of Health",
+      "email": "Verified email at nih.gov",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=pNwVexoAAAAJ&citpid=1"
+    },
+    {
+      "name": "Peter Siegel",
+      "link": "https://scholar.google.com/citations?user=YvGZ1C4AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=YvGZ1C4AAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "YvGZ1C4AAAAJ",
+      "affiliations": "McGill University",
+      "email": "Verified email at mcgill.ca",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Kurt I. Anderson",
+      "link": "https://scholar.google.com/citations?user=LF7x2K4AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=LF7x2K4AAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "LF7x2K4AAAAJ",
+      "affiliations": "CALM Head, The Francis Crick Institute",
+      "email": "Verified email at crick.ac.uk",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=LF7x2K4AAAAJ&citpid=4"
+    },
+    {
+      "name": "Glyn Nelson",
+      "link": "https://scholar.google.com/citations?user=0BKQT1gAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=0BKQT1gAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "0BKQT1gAAAAJ",
+      "affiliations": "Newcastle University",
+      "email": "Verified email at ncl.ac.uk",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=0BKQT1gAAAAJ&citpid=1"
+    },
+    {
+      "name": "Orestis Faklaris",
+      "link": "https://scholar.google.com/citations?user=BzfoKa4AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=BzfoKa4AAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "BzfoKa4AAAAJ",
+      "affiliations": "Research Engineer, MRI facility, Montpellier",
+      "email": "Verified email at mri.cnrs.fr",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Alex Corbett",
+      "link": "https://scholar.google.com/citations?user=FipZAdYAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=FipZAdYAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "FipZAdYAAAAJ",
+      "affiliations": "University of Exeter",
+      "email": "Verified email at exeter.ac.uk",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=FipZAdYAAAAJ&citpid=5"
+    },
+    {
+      "name": "Peter Bajcsy",
+      "link": "https://scholar.google.com/citations?user=3IU_BuUAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=3IU_BuUAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "3IU_BuUAAAAJ",
+      "affiliations": "NIST",
+      "email": "Verified email at nist.gov",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=3IU_BuUAAAAJ&citpid=2"
+    },
+    {
+      "name": "Joshua Broussard",
+      "link": "https://scholar.google.com/citations?user=yr8VRLoAAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=yr8VRLoAAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "yr8VRLoAAAAJ",
+      "affiliations": "Northwestern University",
+      "email": "Verified email at northwestern.edu",
+      "thumbnail": "https://scholar.google.com/citations/images/avatar_scholar_56.png"
+    },
+    {
+      "name": "Francois Amblard",
+      "link": "https://scholar.google.com/citations?user=rV6oyM8AAAAJ&hl=en",
+      "serpapi_link": "https://serpapi.com/search.json?author_id=rV6oyM8AAAAJ&engine=google_scholar_author&hl=en",
+      "author_id": "rV6oyM8AAAAJ",
+      "affiliations": "Distinguished professor, Physics, UNIST",
+      "email": "Verified email at unist.ac.kr",
+      "thumbnail": "https://scholar.googleusercontent.com/citations?view_op=small_photo&user=rV6oyM8AAAAJ&citpid=1"
+    }
+  ],
+  "serpapi_pagination": {
+    "next": "https://serpapi.com/search.json?author_id=OeSNGTQAAAAJ&engine=google_scholar_author&hl=en&start=20"
+  }
+}
