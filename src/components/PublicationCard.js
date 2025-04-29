@@ -1,17 +1,16 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 
-const PublicationCard = ({ title, description, date }) => {
+const PublicationCard = ({ title, description, date, link }) => {
   return (
     <div style={styles.cardContainer}>
       <div style={styles.cardContent}>
         <h3>{title}</h3>
         <p>{description}</p>
-        <Button variant="outline-info">Read More →</Button>
-      </div>
-      <div style={styles.separator}>
-        <span style={styles.tilda}>~</span>
-        <span style={styles.date}>{date}</span>
+                 {/* button read more leads to the link */}
+        <a href={link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+          <Button variant="outline-info">Read More →</Button>
+        </a>
       </div>
     </div>
   );
@@ -21,7 +20,7 @@ const styles = {
   cardContainer: {
     display: "flex",
     flexDirection: "column",
-    width: "45%",
+    width: "100%",
     margin: "10px 0",
     padding: "20px",
     border: "1px solid #ccc",

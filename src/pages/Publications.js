@@ -1,88 +1,148 @@
-import React, { useState } from "react";
-// import Navbar from "../components/NavBar";
+import React, { useEffect, useState } from "react";
 import NavBarPerm from "../components/NavBarPerm";
 import PublicationCard from "../components/PublicationCard";
 import Footer from "../components/Footer";
 import Join from "../components/Join";
-// import { col } from "framer-motion/client";
+// import axios from "axios"; 
+
+const backendUrl =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3001/api/publications"
+    : "https://https://zu-greta.github.io/brown_lab/api/publications"; 
+
 
 const Publications = () => {
-  // Sample publication data
-  const publications = [
-    { title: "Publication 1", description: "Description of publication 1", date: "2025-03-01" },
-    { title: "Publication 2", description: "Description of publication 2", date: "2025-02-25" },
-    { title: "Publication 3", description: "Description of publication 3", date: "2025-01-10" },
-    { title: "Publication 4", description: "Description of publication 4", date: "2025-03-05" },
-  ];
+  const [publications, setPublications] = useState([]);
 
-  // State for search term
-  const [search, setSearch] = useState("");
+  useEffect(() => {
+    const fetchPublications = async () => {
+      try {
+        // const response = await fetch("http://localhost:3001/api/publications");
+        const response = await fetch(backendUrl);
+        const data = await response.json();
+        console.log("Fetched data:", data);
+    
+        if (data.articles) {
+          const mappedPublications = data.articles.map(article => ({
+            title: article.title,
+            description: article.publication,
+            date: article.year ? `${article.year}` : "N/A", // if year missing
+            link: article.link,
+          }));
+    
+          // Sort by date descending
+          mappedPublications.sort((a, b) => new Date(b.date) - new Date(a.date));
+    
+          setPublications(mappedPublications);
+        } else {
+          console.error("No articles field in data!");
+        }
+      } catch (error) {
+        console.error("Failed to fetch publications:", error);
+      }
+    };
+    
+    
 
-  // Filter publications based on the search term
-  const filteredPublications = publications.filter((pub) =>
-    pub.title.toLowerCase().includes(search.toLowerCase()) ||
-    pub.description.toLowerCase().includes(search.toLowerCase())
-  );
+    fetchPublications();
+  }, []);
+  
 
   return (
     <div>
       <NavBarPerm />
-      {/* <Navbar /> */}
       <div style={styles.container}>
-        {/* Search bar */}
-        <input
-          type="text"
-          placeholder="Search publications..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-          style={styles.searchBar}
-        />
-
         <div style={styles.publicationsList}>
-          {/* Loop through publications and create alternating cards */}
-          {filteredPublications.map((publication, index) => (
+          {/* Vertical center bar */}
+          <div style={styles.verticalLine}></div>
+          {publications.map((publication, index) => (
             <div
               key={index}
               style={{
-                display: "flex",
-                justifyContent: index % 2 === 0 ? "flex-start" : "flex-end",
-                width: "100%",
-                marginBottom: "20px",
+                ...styles.publicationItem,
+                flexDirection: index % 2 === 0 ? "row" : "row-reverse",
+                // justifyContent: "center", 
               }}
             >
-              <PublicationCard
-                title={publication.title}
-                description={publication.description}
-                date={publication.date}
-              />
+              {/* Card side */}
+              <div style={styles.cardWrapper}>
+                <PublicationCard
+                  title={publication.title}
+                  description={publication.description}
+                  date={publication.date}
+                  link={publication.link}
+                />
+              </div>
+
+              {/* Center date/tilda side */}
+              <div
+                style={{
+                  ...styles.centerSection,
+                  alignItems: index % 2 === 0 ? "flex-start" : "flex-end", // Right for left cards, left for right cards
+                  marginRight: index % 2 === 0 ? "20px" : "0",
+                  marginLeft: index % 2 === 0 ? "0" : "20px",
+                }}
+              >
+                <div style={styles.tilda}>~ {publication.date} ~</div>
+              </div>
             </div>
           ))}
-              <Join />
+
+
+          <Join />
         </div>
       </div>
-        <Footer />
+      <Footer />
     </div>
   );
 };
 
 const styles = {
   container: {
-    padding: "60px",
-    colour: "white",
-    backgroundColor: 'rgb(33, 37, 37)',
-  },
-  searchBar: {
-    width: "100%",
-    padding: "10px",
-    marginBottom: "20px",
-    borderRadius: "4px",
-    border: "1px solid #ccc",
+    padding: "3%",
+    backgroundColor: "rgb(33, 37, 37)",
+    position: "relative",
   },
   publicationsList: {
     display: "flex",
-    color: "white",
     flexDirection: "column",
-    alignItems: "flex-start",
+    alignItems: "center",
+    position: "relative",
+    color: "white",
+  },
+  verticalLine: {
+    position: "absolute",
+    top: 0,
+    bottom: 0,
+    left: "50%",
+    width: "2px",
+    backgroundColor: "#ccc",
+    transform: "translateX(-50%)",
+    zIndex: 0,
+  },
+  publicationItem: {
+    display: "flex",
+    alignItems: "center",
+    width: "100%",
+    position: "relative",
+    zIndex: 1,
+  },
+  cardWrapper: {
+    flex: "0 0 40%",
+    maxWidth: "40%",
+    padding: "1%",
+  },
+  centerSection: {
+    flex: "0 0 20%",
+    maxWidth: "20%",
+    display: "flex",
+    flexDirection: "column",
+    fontSize: "24px",
+    color: "white",
+  },  
+  tilda: {
+    fontSize: "90%",
+    color: "lightgray",
   },
 };
 

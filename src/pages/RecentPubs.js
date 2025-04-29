@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import PublicationCard from "../components/PublicationCardRecent";  
+import PublicationCard from "../components/PublicationCard";  
+import { Link } from "react-router-dom";
 
 const RecentPubs = () => {
     const backStyle = {
@@ -55,8 +56,8 @@ const RecentPubs = () => {
                 
                 {/* Button to navigate to All Publications */}
                 <div className="text-right mt-4">
-                    <Button variant="outline-light" href="/brown_lab/publications">
-                        All Publications →
+                    <Button variant="outline-light"> <Link to="/publications" style={{ color: "white", textDecoration: "none"}}>All Publications →</Link>
+                        
                     </Button>
                 </div>
             </Container>
