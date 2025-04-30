@@ -25,7 +25,7 @@ const ProjectsSection = () => {
             description: "lorem ipsum",
             memberImage: placeholder,
             memberId: "jane-smith",
-            memberName: "Jane Smith",
+            memberName: "Jane Smith, John Doe, Alice Wang",
         },
         {
             title: "Benchmarking STED and Expansion Microscopy",

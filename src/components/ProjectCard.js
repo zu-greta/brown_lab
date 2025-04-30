@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const ProjectCard = ({ title, status, description, memberImage, memberId, memberName }) => {
   const statusColors = {
-    "ongoing": "warning", // yellow
-    "published": "success", // green
+    ongoing: "warning",
+    published: "success",
   };
 
   return (
@@ -19,6 +19,26 @@ const ProjectCard = ({ title, status, description, memberImage, memberId, member
             transform: translateY(-8px);
             box-shadow: 0 8px 20px rgba(102, 178, 255, 0.5);
           }
+          .member-rectangle {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 2px solid #6c757d;
+          }
+          .member-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1rem;
+          }
+          .member-info {
+            flex: 1;
+          }
+          .member-img-container {
+            width: 30%;
+          }
         `}
       </style>
 
@@ -26,9 +46,8 @@ const ProjectCard = ({ title, status, description, memberImage, memberId, member
         className="project-card shadow-lg"
         style={{
           width: "25rem",
-          backgroundColor: "rgb(33, 37, 37)", 
-        //   #2c2f33
-          color: "#e0e0e0", 
+          backgroundColor: "rgb(33, 37, 37)",
+          color: "#e0e0e0",
           overflow: "hidden",
           position: "relative",
           padding: "1rem",
@@ -52,31 +71,31 @@ const ProjectCard = ({ title, status, description, memberImage, memberId, member
         </Badge>
 
         <Card.Body>
-          <Card.Title style={{ fontWeight: "bold", fontSize: "1.5rem", marginBottom: "1rem" , marginTop: "1rem"}}>
+          <Card.Title style={{ fontWeight: "bold", fontSize: "1.5rem", marginTop: "1rem" }}>
             {title}
           </Card.Title>
 
-          <Card.Text style={{ marginBottom: "1.5rem" }}>
+          <Card.Text style={{ marginBottom: "1rem" }}>
             {description}
           </Card.Text>
 
-          <div className="d-flex align-items-center">
-            <Link to={`/members`}>
-              <img
-                src={memberImage}
-                alt="Member"
-                className="rounded-circle me-2"
-                style={{ width: "50px", height: "50px", objectFit: "cover", border: "2px solid #6c757d" }}
-              />
-            </Link>
-
-            <div>
+          <div className="member-flex">
+            <div className="member-info">
               <div style={{ fontSize: "0.9rem", color: "#adb5bd" }}>Members:</div>
               <Link
-                to={`/members`}
+                to={`/members/${memberId}`}
                 style={{ color: "#66b2ff", textDecoration: "none", fontWeight: "bold" }}
               >
                 {memberName}
+              </Link>
+            </div>
+            <div className="member-img-container">
+              <Link to={`/members/${memberId}`}>
+                <img
+                  src={memberImage}
+                  alt="Member"
+                  className="member-rectangle"
+                />
               </Link>
             </div>
           </div>
