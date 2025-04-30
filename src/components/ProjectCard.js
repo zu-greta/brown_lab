@@ -26,7 +26,8 @@ const ProjectCard = ({ title, status, description, memberImage, memberId, member
         className="project-card shadow-lg"
         style={{
           width: "25rem",
-          backgroundColor: "#2c2f33", 
+          backgroundColor: "rgb(33, 37, 37)", 
+        //   #2c2f33
           color: "#e0e0e0", 
           overflow: "hidden",
           position: "relative",

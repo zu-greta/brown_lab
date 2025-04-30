@@ -21,3 +21,13 @@ In case of problems:
 rm -rf node_modules package-lock.json
 npm install
 npm start
+
+---
+
+In the backend directory, you can run:
+
+### `node fetch_and_save.js`
+
+To fetch the publications.
+
+---
