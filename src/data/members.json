@@ -1,0 +1,119 @@
+{
+    "activeMembers": [
+      {
+        "title": "Professor & Director",
+        "name": "Dr. Claire Brown",
+        "extraInfo": "Research Lead",
+        "image": "claire",
+        "bio": "I have been working in the field of quantitative bioimaging for over 25 years. My research has focused on applying biophysical techniques to fluorescence microscopy images to extract quantitative data measuring protein distributions, dynamics and interactions. I have applied these techniques to study proteins that regulate cell adhesion and migration to understand how migration is regulated at the molecular level in normal and diseased cellular systems. My research has also focused on optimizing live cell imaging to minimize phototoxicity and ensure the collection of high-fidelity data that is free of light induced artifacts. Quality control and standards for quantitative light microscopy have also been an important area of research. For 15 years, I have been directing the Advanced BioImaging Facility (ABIF) and developing and implementing active learning courses and workshops in fundamental and advanced light microscopy. In 2016, I also took over management of the Cell Imaging and Analysis Network (CIAN) light and the Cystic Fibrosis Translation Research Centre (CFTRc) light microscopes. Overall, I manage 18 research microscopes and a team of staff who provide high quality training and support for these advanced technologies.",
+        "contact": "N/A"
+      },
+      {
+        "title": "PhD Physiology",
+        "name": "Natalie Woo",
+        "extraInfo": "Super-Resolution Imaging of Cell Adhesions",
+        "image": "placeholder",
+        "bio": "09/2022–Present",
+        "contact": ""
+      },
+      {
+        "title": "MSc Physiology",
+        "name": "Genevieve Laprade",
+        "extraInfo": "Benchmarking Super-Resolution Algorithms",
+        "image": "placeholder",
+        "bio": "09/2024–Present",
+        "contact": ""
+      },
+      {
+        "title": "Undergraduate Research Assistant",
+        "name": "Cesar Villa",
+        "extraInfo": "Benchmarking Expansion Microscopy",
+        "image": "placeholder",
+        "bio": "",
+        "contact": ""
+      }
+    ],
+    "alumniMembers": [
+      {
+        "title": "PhD Physiology",
+        "name": "Jalal Al Rahbani",
+        "extraInfo": "Role of paxillin Y31, Y118 and S273 in regulating adhesion and migration",
+        "image": "placeholder",
+        "bio": "01/2021–04/2025",
+        "contact": ""
+      },
+      {
+        "title": "MSc Experimental Medicine",
+        "name": "Alex Nowakowski",
+        "extraInfo": "Cancer cell migration in brain and liver tissue (took an 18 month leave to attend medical school)",
+        "image": "placeholder",
+        "bio": "09/2021–12/2024",
+        "contact": ""
+      },
+      {
+        "title": "MSc Physiology",
+        "name": "Zoe Zhang",
+        "extraInfo": "AI/ML to generate synthetic images of the cytoskeleton",
+        "image": "placeholder",
+        "bio": "09/2022–12/2024",
+        "contact": ""
+      },
+      {
+        "title": "Post-Doctoral Fellow",
+        "name": "Barbara Da Rocha",
+        "extraInfo": "uCompass Remote Microscopy Training Program",
+        "image": "placeholder",
+        "bio": "09/2020–08/2022",
+        "contact": ""
+      },
+      {
+        "title": "Post-Doctoral Fellow",
+        "name": "Lamees Mahmoud",
+        "extraInfo": "Machine Learning to Classify and Characterize Cellular Adhesions",
+        "image": "placeholder",
+        "bio": "08/2019–05/2022",
+        "contact": ""
+      },
+      {
+        "title": "PhD Physiology",
+        "name": "Alexander Kiepas",
+        "extraInfo": "The role of the mechanosensitive protein, LPP, in regulating TGFβ induced increases in breast cancer cell migration",
+        "image": "placeholder",
+        "bio": "09/2015–08/2020",
+        "contact": ""
+      },
+      {
+        "title": "MSc Physiology",
+        "name": "Abira Rajah",
+        "extraInfo": "Role of paxillin S273 phosphorylation in regulating cell adhesion and migration",
+        "image": "placeholder",
+        "bio": "09/2018–08/2020",
+        "contact": ""
+      },
+      {
+        "title": "MSc Physiology",
+        "name": "Rebecca Deagle",
+        "extraInfo": "The role of LPP in regulating breast cancer cell migration in 3D cell culture model systems",
+        "image": "placeholder",
+        "bio": "09/2017–08/2020",
+        "contact": ""
+      },
+      {
+        "title": "MSc Biochemistry",
+        "name": "Elena Voorand",
+        "extraInfo": "The role of LPP and novel binding partners in the regulation of breast cancer cell invasion",
+        "image": "placeholder",
+        "bio": "05/2017–04/2020",
+        "contact": ""
+      },
+      {
+        "title": "MSc Physiology",
+        "name": "Jessica Lyda",
+        "extraInfo": "Molecular modeling and regulation of cell adhesion and migration via paxillin S273 phosphorylation",
+        "image": "placeholder",
+        "bio": "09/2017–04/2020",
+        "contact": ""
+      }
+    ]
+  }
+  
