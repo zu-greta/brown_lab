@@ -34,7 +34,7 @@ const Footer = () => {
                         </ul>
                     </Col>
 
-                    {/* Column 3: Social Media */}
+                    {/* Column 3: Social Media
                     <Col xs={12} md={4} className="mb-4">
                         <h5>Follow Us</h5>
                         <div>
@@ -48,7 +48,7 @@ const Footer = () => {
                                 <FaGithub size={30} style={{ color: 'white' }} />
                             </a>
                         </div>
-                    </Col>
+                    </Col> */}
                 </Row>
                 <Row>
                     <Col className="text-center mt-4">
