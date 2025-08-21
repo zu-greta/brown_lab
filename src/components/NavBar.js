@@ -9,14 +9,14 @@ function bar() {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" sticky="top" bg="dark" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand as={Link} to="/brown_lab/">Brown Lab</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/brown_lab/#overview">Lab Overview</Nav.Link>
-            <Nav.Link href="/brown_lab/#publications">Recent Publications</Nav.Link>
-            <Nav.Link href="/brown_lab/#projects">Current Projects</Nav.Link>
-          </Nav>
+        <Navbar.Brand href="/brown_lab/">Brown Lab</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav">
+              <Nav className="me-auto">
+                <Nav.Link href="/brown_lab/#overview">Lab Overview</Nav.Link>
+                <Nav.Link href="/brown_lab/#publications">Recent Publications</Nav.Link>
+                <Nav.Link href="/brown_lab/#projects">Current Projects</Nav.Link>
+              </Nav>
           <Nav>
             <NavDropdown title="Projects/Publications" id="collapsible-nav-dropdown">
               <NavDropdown.Item as={Link} to="/projects">Projects</NavDropdown.Item>
