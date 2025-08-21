@@ -1,4 +1,3 @@
-import React from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -18,15 +17,18 @@ function bar() {
           </Nav>
           <Nav>
             <NavDropdown title="Projects/Publications" id="collapsible-nav-dropdown">
-              <NavDropdown.Item> <Link to="/projects" style={{ color: "white", textDecoration: "none"}}>Projects</Link></NavDropdown.Item>
-              <NavDropdown.Item> <Link to="/publications" style={{ color: "white", textDecoration: "none"}}>Publications</Link></NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/projects">Projects</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/publications">Publications</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link> <Link to="/members" style={{ color: "white", textDecoration: "none"}}>Members</Link></Nav.Link> 
+            <Nav.Link as={Link} to="/members">Members</Nav.Link>
             <NavDropdown title="Related Sites" id="collapsible-nav-dropdown">
               <NavDropdown.Item href="https://www.mcgill.ca/abif/">ABIF</NavDropdown.Item>
-              <NavDropdown.Item href="https://www.mcgill.ca/physiology/directory/core-faculty/claire-browns">Claire Brown</NavDropdown.Item>
+              <NavDropdown.Item href="https://www.canadabioimaging.org/">Canada Bioimaging</NavDropdown.Item>
+              <NavDropdown.Item href="https://www.mcgill.ca/physiology/directory/core-faculty/claire-brown">
+                Claire Brown
+              </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link disabled >|</Nav.Link>
+            <Nav.Link disabled>|</Nav.Link>
             <Nav.Link eventKey={2} href="#modeToggle">
               EN/FR
             </Nav.Link>
