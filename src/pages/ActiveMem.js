@@ -35,12 +35,13 @@ const ActiveMem = () => {
                 <div style={descriptionStyle}>
                     <h2>Claire Brown</h2>
                     <p>
-                        Section about Claire Brown. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac felis non eros lacinia ultricies. Donec id aliquet nunc. In hac habitasse platea dictumst. Nullam nec nisl ac nunc.
+                        I have been working in the field of quantitative bioimaging for over 25 years. 
+                        My research has focused on applying biophysical techniques to fluorescence microscopy 
+                        images to extract quantitative data measuring protein distributions, dynamics and interactions.
                     </p>
-                    <Link to="/members"> 
-                    {/* TODO link to extra page for claire */}
-                        <Button variant="outline-info" >See full profile →</Button>
-                    </Link>
+                    <Button as={Link} to="/members" variant="outline-info">
+                        See full profile →
+                    </Button>
                 </div>
             </div>
 
@@ -56,10 +57,6 @@ const ActiveMem = () => {
                     </Link>
                     <br />
                     <br />
-                    {/* join the team
-                    <Link to="/join">
-                        <Button variant="outline-light" >Join Our Team →</Button>
-                    </Link> */}
                 </div>
                 <div style={imageStyle}>
                     <img src={placeholder} alt="Team members" style={{ width: '100%', borderRadius: '10px' }} />

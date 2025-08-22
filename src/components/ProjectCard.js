@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Badge } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const ProjectCard = ({ title, status, description, memberImage, memberId, memberName }) => {
+const ProjectCard = ({ title, status, description, memberName }) => {
   const statusColors = {
     ongoing: "warning",
     published: "success",
@@ -83,19 +83,14 @@ const ProjectCard = ({ title, status, description, memberImage, memberId, member
             <div className="member-info">
               <div style={{ fontSize: "0.9rem", color: "#adb5bd" }}>Members:</div>
               <Link
-                to={`/members/${memberId}`}
+                to={`/members`}
                 style={{ color: "#66b2ff", textDecoration: "none", fontWeight: "bold" }}
               >
                 {memberName}
               </Link>
             </div>
             <div className="member-img-container">
-              <Link to={`/members/${memberId}`}>
-                <img
-                  src={memberImage}
-                  alt="Member"
-                  className="member-rectangle"
-                />
+              <Link to={`/members`}>
               </Link>
             </div>
           </div>

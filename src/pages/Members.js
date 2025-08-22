@@ -14,6 +14,7 @@ const Members = () => {
   const activeMembers = membersData.activeMembers;
   const alumniMembers = membersData.alumniMembers;
   const claireBrown = activeMembers.filter(m => m.name === "Dr. Claire Brown");
+  const filteredActiveMembers = activeMembers.filter(m => m.name !== "Dr. Claire Brown");
 
 
   return (
@@ -38,7 +39,7 @@ const Members = () => {
         {/* Active Members Section */}
         <h2>Active Members</h2>
         <Row>
-          {activeMembers.map((member, index) => (
+          {filteredActiveMembers.map((member, index) => (
             <Col key={index} xs={12} md={6} className="mb-4">
               <MemberCard {...member} />
             </Col>

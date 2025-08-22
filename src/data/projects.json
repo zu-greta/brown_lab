@@ -1,0 +1,52 @@
+{
+    "current": [
+        {
+            "title": "Image analysis",
+            "status": "ongoing",
+            "description": "lorem ipsum hello",
+            "image": "placeholder",
+            "caption": "Research Team",
+            "members": [
+            { "name": "Jane Smith", "image": "placeholder" }
+            ],
+            "memberName": "Jane Smith"
+        },
+        {
+            "title": "Paxillin and regulation of cell migration",
+            "status": "ongoing",
+            "description": "lorem ipsum",
+            "image": "placeholder",
+            "caption": "Cell Migration Team",
+            "members": [
+            { "name": "Jane Smith", "image": "placeholder" },
+            { "name": "John Doe", "image": "placeholder" },
+            { "name": "Alice Wang", "image": "placeholder" }
+            ],
+            "memberName": "Jane Smith, John Doe, Alice Wang"
+        },
+        {
+            "title": "Benchmarking STED and Expansion Microscopy",
+            "status": "published",
+            "description": "lorem ipsum",
+            "image": "placeholder",
+            "caption": "Microscopy Team",
+            "members": [
+            { "name": "Jane Smith", "image": "placeholder" }
+            ],
+            "memberName": "Jane Smith"
+        }
+    ],
+    "past": [
+        {
+            "title": "Project A",
+            "status": "completed",
+            "description": "lorem ipsum",
+            "image": "placeholder",
+            "caption": "Team A",
+            "members": [
+            { "name": "Jane Smith", "image": "placeholder" }
+            ],
+            "memberName": "Jane Smith"
+        }
+    ]
+}

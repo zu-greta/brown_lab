@@ -46,30 +46,41 @@ brown_lab
 │   └── server.js               # runs the function to fetch and save publications
 ├── src/                        # source code of the project
 │   ├── assets/                 # images
-│   ├── components/             # pieces of UI to reuse
+- TODO: add images in assets ^
+│   ├── components/             # pieces of UI to reuse (COMPONENTS)
 │   │   ├── Alumni.js           # alumni member card + modal
 │   │   ├── Footer.js           # footer of all pages
 │   │   ├── Join.js             # join us button
+- TODO: fix the join form and email ^
 │   │   ├── MemberCard.js       # member card + modal
 │   │   ├── NavBar.js           # general page navigation bar
 │   │   ├── NavBarPerm.js       # projects, publications, members page navigation bar
 │   │   ├── ProjectCard.js      # project card
 │   │   ├── PublicationCard.js  # publication card
+- TODO: check 
+│   │   └──ScrollToTop.js       # reset the scroll of the page
 │   ├── data/
 │   │   ├── members.json        # data json file of members (active and alumni)
-│   │   ├── publications.json   # saved json data file from publication fetch
-│   ├── pages/
+- TODO: add info for members and pictures ^
+│   │   ├── projects.json        # data json file of projects (current and past)
+- TODO: add info for projects and pictures ^
+│   │   └── publications.json   # saved json data file from publication fetch
+- TODO: refresh publications and get a key? ^
+│   ├── pages/                  # (PAGES and SECTIONS)
 │   │   ├── ActiveMem.js        # on main page, members section (Claire Brown + Members intro)
 │   │   ├── Funding.js          # on main page, funding organizations information
 │   │   ├── Hero.js             # on main page, carousel
+- TODO: add slogan? ^
 │   │   ├── Home.js             # main page setup
-│   │   ├── Join.js             # join page
 │   │   ├── Members.js          # members page
 │   │   ├── Overview.js         # on main page, overview of the lab section
+- TODO: text and images ^
 │   │   ├── Projects.js         # projects page
 │   │   ├── ProjectsSection.js  # on main page, current projects section
 │   │   ├── Publications.js     # publications page
-│   │   ├── RecentPubs.js       # on main page, recent publications section
+- TODO: check 
+│   │   └── RecentPubs.js       # on main page, recent publications section
+- TODO: check 
 │   ├── App.css                 # general style
 │   └── App.js                  # overall routing
 └── .gitignore

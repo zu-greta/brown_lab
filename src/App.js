@@ -5,18 +5,18 @@ import Publications from "./pages/Publications";
 import Members from "./pages/Members";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Projects from './pages/Projects';
-import Join from './pages/Join';
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router basename="/brown_lab">
     {/* <Router basename="zu-greta.github.io/brown_lab/"> */}
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/publications" element={<Publications />} />
         <Route path="/members" element={<Members />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/join" element={<Join />} />
       </Routes>
     </Router>
   );

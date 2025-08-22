@@ -6,84 +6,87 @@ import Join from "../components/Join";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import placeholder from '../assets/placeholder.jpg';
+import placeholder from "../assets/placeholder.jpg";
+
+import projectsData from "../data/projects.json"; // <-- IMPORT THE FILE
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "AI Research",
-      status: "ongoing",
-      description: "Exploring new frontiers in artificial intelligence.",
-      image: placeholder,
-      members: [
-        { id: "john-doe", name: "John Doe", image: placeholder },
-        { id: "alice-wang", name: "Alice Wang", image: placeholder },
-      ],
-      caption: "AI Research Team",
-    },
-    {
-      title: "Neuroscience Study",
-      status: "published",
-      description: "Investigating the effects of cognitive load.",
-      image: placeholder,
-      members: [
-        { id: "jane-smith", name: "Jane Smith", image: placeholder },
-      ],
-      caption: "Neuroscience Study Team",
-    },
-  ];
-
   const [search] = useState("");
 
-  const filteredProjects = projects.filter((proj) =>
-    proj.title.toLowerCase().includes(search.toLowerCase()) ||
-    proj.description.toLowerCase().includes(search.toLowerCase())
+  const resolveImage = (img) => {
+    if (img === "placeholder") return placeholder;
+    return img; 
+  };
+
+  const filterProjects = (projects) =>
+    projects.filter(
+      (proj) =>
+        proj.title.toLowerCase().includes(search.toLowerCase()) ||
+        proj.description.toLowerCase().includes(search.toLowerCase())
+    );
+
+  const currentProjects = filterProjects(projectsData.current);
+  const pastProjects = filterProjects(projectsData.past);
+
+  const renderProjectRow = (project, index) => (
+    <div key={index} style={styles.projectRow}>
+      {/* Left column: Image with caption */}
+      <div style={styles.leftCol}>
+        <img
+          src={resolveImage(project.image)}
+          alt="Project"
+          style={styles.projectImage}
+        />
+        <p style={styles.imageCaption}>{project.caption}</p>
+      </div>
+
+      {/* Center column: ProjectCard */}
+      <div style={styles.centerCol}>
+        <ProjectCard
+          title={project.title}
+          status={project.status}
+          description={project.description}
+          memberName={project.memberName}
+        />
+      </div>
+
+      {/* Right column: Unified block with member rows */}
+      <div style={styles.rightCol}>
+        <div style={styles.memberContainer}>
+          {project.members.map((member, i) => (
+            <div key={i} style={styles.memberRow}>
+              <img
+                src={resolveImage(member.image)}
+                alt={member.name}
+                style={styles.memberImageRow}
+              />
+              <div style={styles.memberInfo}>
+                <div style={styles.memberName}>{member.name}</div>
+                <Link to={`/members`}>
+                  <Button variant="outline-info" size="sm">
+                    View Profile →
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 
   return (
     <div>
       <NavBarPerm />
       <div style={styles.container}>
+        {/* ---- Current Projects ---- */}
         <h2 style={styles.title}>Current Projects</h2>
+        {currentProjects.map(renderProjectRow)}
 
-        {filteredProjects.map((project, index) => (
-          <div key={index} style={styles.projectRow}>
-            {/* Left column: Image with caption */}
-            <div style={styles.leftCol}>
-              <img src={project.image} alt="Project" style={styles.projectImage} />
-              <p style={styles.imageCaption}>{project.caption}</p>
-            </div>
+        {/* ---- Past Projects ---- */}
+        <h2 style={styles.title}>Past Projects</h2>
+        {pastProjects.map(renderProjectRow)}
 
-            {/* Center column: ProjectCard */}
-            <div style={styles.centerCol}>
-              <ProjectCard
-                title={project.title}
-                status={project.status}
-                description={project.description}
-                memberImage={project.members[0]?.image}
-                memberId={project.members[0]?.id}
-                memberName={project.members[0]?.name}
-              />
-            </div>
-
-            {/* Right column: Unified block with member rows */}
-            <div style={styles.rightCol}>
-              <div style={styles.memberContainer}>
-                {project.members.map((member, i) => (
-                  <div key={i} style={styles.memberRow}>
-                    <img src={member.image} alt={member.name} style={styles.memberImageRow} />
-                    <div style={styles.memberInfo}>
-                      <div style={styles.memberName}>{member.name}</div>
-                      <Link to={`/members/${member.id}`}>
-                        <Button variant="outline-info" size="sm">View Profile →</Button>
-                      </Link>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        ))}
         <Join />
       </div>
       <Footer />
@@ -99,8 +102,8 @@ const styles = {
   title: {
     color: "white",
     textAlign: "center",
-    marginBottom: "50px",
-    fontSize: "2.8rem",
+    margin: "50px 0 30px 0",
+    fontSize: "2.4rem",
     fontWeight: "bold",
   },
   projectImage: {
@@ -108,8 +111,7 @@ const styles = {
     height: "auto",
     border: "1px solid #ccc",
     borderRadius: "10px",
-    // marginBottom: "10px",
-    marginTop: "4%"
+    marginTop: "4%",
   },
   imageCaption: {
     fontSize: "1rem",
@@ -123,7 +125,7 @@ const styles = {
     marginBottom: "3%",
     width: "100%",
     gap: "2%",
-    flexWrap: "nowrap", // changed from wrap
+    flexWrap: "nowrap",
   },
   leftCol: {
     flexBasis: "30%",
@@ -139,14 +141,14 @@ const styles = {
     flexBasis: "30%",
     display: "flex",
     justifyContent: "center",
-  },  
+  },
   memberContainer: {
     backgroundColor: "rgb(33, 37, 37)",
     padding: "20px",
     border: "1px solid #ccc",
     borderRadius: "10px",
     width: "100%",
-    marginTop: "4%"
+    marginTop: "4%",
   },
   memberRow: {
     display: "flex",

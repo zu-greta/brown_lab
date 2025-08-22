@@ -23,7 +23,7 @@ const MemberCard = ({ title, name, extraInfo, image, bio, contact }) => {
             <Col xs={4} md={3} className="d-flex align-items-center">
               <Card.Img 
                 variant="top" 
-                src={image} 
+                src={require(`../assets/${image}.jpg`)}
                 className="rounded-circle" 
                 style={{ width: "100%", height: "100%", objectFit: "cover", border: "2px solid #ccc" }}
               />
@@ -36,7 +36,6 @@ const MemberCard = ({ title, name, extraInfo, image, bio, contact }) => {
                 variant="outline-info" 
                 onClick={() => setShow(true)}
                 size="sm"
-                // style={{ alignSelf: "flex-start" }}
               >
                 View Profile →
               </Button>
@@ -62,7 +61,7 @@ const MemberCard = ({ title, name, extraInfo, image, bio, contact }) => {
           <Row>
             <Col md={4} className="text-center mb-3 mb-md-0">
               <img 
-                src={image} 
+                src={require(`../assets/${image}.jpg`)}
                 alt={name} 
                 className="rounded" 
                 style={{ width: "100%", objectFit: "cover", maxHeight: "300px" }}

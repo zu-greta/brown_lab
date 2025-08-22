@@ -1,4 +1,5 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
     const footerStyle = {
@@ -15,7 +16,8 @@ const Footer = () => {
                 <Row>
                     <Col xs={12} md={12} className=" mb-4">
                         <h4>Contact Us</h4>
-                        <p><b>Email:</b> TODO</p>
+                        <p><b>Email:</b> Claire.Brown@mcgill.ca</p>
+                        <p><b>Phone:</b> +1 (514) 399-9492</p>
                         <p><b>Address:</b> Bellini Life Science Complex, Room 137, 3649 Promenade Sir-William-Osler, Montreal, Quebec H3A 1W9, Canada</p>
                     </Col>
                 </Row>
