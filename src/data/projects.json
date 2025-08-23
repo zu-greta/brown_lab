@@ -7,7 +7,7 @@
             "image": "placeholder",
             "caption": "Research Team",
             "members": [
-            { "name": "Jane Smith", "image": "placeholder" }
+            { "name": "Jane Smith", "image": "placeholder.jpg" }
             ],
             "memberName": "Jane Smith"
         },
@@ -18,9 +18,9 @@
             "image": "placeholder",
             "caption": "Cell Migration Team",
             "members": [
-            { "name": "Jane Smith", "image": "placeholder" },
-            { "name": "John Doe", "image": "placeholder" },
-            { "name": "Alice Wang", "image": "placeholder" }
+            { "name": "Jane Smith", "image": "placeholder.jpg" },
+            { "name": "John Doe", "image": "placeholder.jpg" },
+            { "name": "Alice Wang", "image": "placeholder.jpg" }
             ],
             "memberName": "Jane Smith, John Doe, Alice Wang"
         },
@@ -31,7 +31,7 @@
             "image": "placeholder",
             "caption": "Microscopy Team",
             "members": [
-            { "name": "Jane Smith", "image": "placeholder" }
+            { "name": "Jane Smith", "image": "placeholder.jpg" }
             ],
             "memberName": "Jane Smith"
         }
@@ -44,7 +44,7 @@
             "image": "placeholder",
             "caption": "Team A",
             "members": [
-            { "name": "Jane Smith", "image": "placeholder" }
+            { "name": "Jane Smith", "image": "placeholder.jpg" }
             ],
             "memberName": "Jane Smith"
         }

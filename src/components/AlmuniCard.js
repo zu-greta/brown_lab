@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 
-const Alumni = ({ title, name, extraInfo, image, bio, year, contact }) => {
+const AlumniCard = ({ title, name, extraInfo, image, bio, year, contact }) => {
   const [show, setShow] = useState(false);
   return (
     <>
@@ -22,7 +22,7 @@ const Alumni = ({ title, name, extraInfo, image, bio, year, contact }) => {
             <Col xs={4} md={3} className="d-flex align-items-center">
               <Card.Img 
                 variant="top" 
-                src={require(`../assets/${image}.jpg`)}
+                src={require(`../assets/members_images/${image}`)}
                 className="rounded-circle" 
                 style={{ width: "100%", height: "100%", objectFit: "cover", border: "2px solid #ccc" }}
               />
@@ -60,7 +60,7 @@ const Alumni = ({ title, name, extraInfo, image, bio, year, contact }) => {
           <Row>
             <Col md={4} className="text-center mb-3 mb-md-0">
               <img 
-                src={require(`../assets/${image}.jpg`)}
+                src={require(`../assets/members_images/${image}`)}
                 alt={name} 
                 className="rounded" 
                 style={{ width: "100%", objectFit: "cover", maxHeight: "300px" }}
@@ -89,4 +89,4 @@ const Alumni = ({ title, name, extraInfo, image, bio, year, contact }) => {
   );
 };
 
-export default Alumni;
+export default AlumniCard;

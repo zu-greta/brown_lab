@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 
 import placeholder from '../assets/placeholder.jpg';
-import claire from '../assets/claire_brown.jpg';
+import claire from '../assets/members_images/claire_brown.jpg';
 
 const ActiveMem = () => {
     const sectionStyle = {

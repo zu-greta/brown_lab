@@ -2,7 +2,6 @@ import React from "react";
 import NavBarPerm from "../components/NavBarPerm";
 import PublicationCard from "../components/PublicationCard";
 import Footer from "../components/Footer";
-import Join from "../components/Join";
 import publicationsData from "../data/publications.json"; // <-- IMPORT THE FILE
 
 const Publications = () => {
@@ -50,7 +49,6 @@ const Publications = () => {
               </div>
             </div>
           ))}
-          <Join />
         </div>
       </div>
       <Footer />

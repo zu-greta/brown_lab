@@ -23,7 +23,7 @@ const MemberCard = ({ title, name, extraInfo, image, bio, contact }) => {
             <Col xs={4} md={3} className="d-flex align-items-center">
               <Card.Img 
                 variant="top" 
-                src={require(`../assets/${image}.jpg`)}
+                src={require(`../assets/members_images/${image}`)}
                 className="rounded-circle" 
                 style={{ width: "100%", height: "100%", objectFit: "cover", border: "2px solid #ccc" }}
               />
@@ -61,7 +61,7 @@ const MemberCard = ({ title, name, extraInfo, image, bio, contact }) => {
           <Row>
             <Col md={4} className="text-center mb-3 mb-md-0">
               <img 
-                src={require(`../assets/${image}.jpg`)}
+                src={require(`../assets/members_images/${image}`)}
                 alt={name} 
                 className="rounded" 
                 style={{ width: "100%", objectFit: "cover", maxHeight: "300px" }}

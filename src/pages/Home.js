@@ -1,8 +1,5 @@
 import React from "react";
 import Navbar from "../components/NavBar";
-// import NavbarPerm from "../components/NavBarPerm";
-import Join from "../components/Join";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "./Hero";
 import Overview from "./Overview";
 import Research from "./ProjectsSection";
@@ -32,7 +29,6 @@ const Home = () => {
       <section id="funding">
         <Funding />
       </section>
-      <Join />
       <Footer />
     </div>
   );

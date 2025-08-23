@@ -5,8 +5,7 @@ import Col from "react-bootstrap/Col";
 import NavBarPerm from "../components/NavBarPerm";
 import MemberCard from "../components/MemberCard";
 import Footer from "../components/Footer";
-import Join from "../components/Join";
-import Alumni from "../components/Almuni";
+import AlumniCard from "../components/AlmuniCard";
 
 import membersData from "../data/members.json"; // <-- IMPORT THE FILE
 
@@ -53,12 +52,11 @@ const Members = () => {
         <Row>
           {alumniMembers.map((member, index) => (
             <Col key={index} xs={12} md={6} className="mb-4">
-              <Alumni {...member} />
+              <AlumniCard {...member} />
             </Col>
           ))}
         </Row>
       </Container>
-      <Join />
       <Footer />
     </div>
   );

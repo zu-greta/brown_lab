@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import NavBarPerm from "../components/NavBarPerm";
 import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer";
-import Join from "../components/Join";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -14,6 +13,7 @@ const Projects = () => {
   const [search] = useState("");
 
   const resolveImage = (img) => {
+    if (img === "placeholder.jpg") return placeholder;
     if (img === "placeholder") return placeholder;
     return img; 
   };
@@ -86,8 +86,6 @@ const Projects = () => {
         {/* ---- Past Projects ---- */}
         <h2 style={styles.title}>Past Projects</h2>
         {pastProjects.map(renderProjectRow)}
-
-        <Join />
       </div>
       <Footer />
     </div>
