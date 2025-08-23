@@ -2,7 +2,7 @@ import React from "react";
 // import { Carousel } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
 
-import placeholder from '../assets/placeholder.jpg';
+import placeholder from '../../assets/placeholder.jpg';
 
 const Overview = () => {
     const sectionStyle = {

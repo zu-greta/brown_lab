@@ -1,10 +1,10 @@
 import React from "react";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../../components/ProjectCard";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import projectsData from "../data/projects.json"; // <-- IMPORT THE FILE
+import projectsData from "../../data/projects.json"; // <-- IMPORT THE FILE
 
 const ProjectsSection = () => {
     const projects = projectsData.current;

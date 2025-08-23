@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import PublicationCard from "../components/PublicationCard";  
+import PublicationCard from "../../components/PublicationCard";  
 import { Link } from "react-router-dom";
 
 // Import the local JSON file
-import publicationsData from "../data/publications.json"; 
+import publicationsData from "../../data/publications.json"; 
 
 const RecentPubs = () => {
     const sortedPublications = publicationsData.articles

@@ -5,17 +5,16 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 
-const AlumniCard = ({ title, name, extraInfo, image, bio, year, contact }) => {
-  const [show, setShow] = useState(false);
+const AlumniCard = ({ title, name, extraInfo, image, thesis, year }) => {
   return (
     <>
-      {/* Member Card */}
+      {/* Alumni Member Card */}
       <Card 
         className="my-3 p-3 shadow-sm" 
         style={{ backgroundColor: "rgb(44, 48, 48)", color: "white", border: "1px solid #ccc", borderRadius: "10px", }}
       >
         <Card.Header className="bg-transparent border-bottom">
-          <h5 className="mb-0" style={{ fontWeight: "bold", color: "lightgray" }}>{title} ~ {year}</h5>
+          <h5 className="mb-0" style={{ fontWeight: "bold", color: "lightgray" }}>{title}</h5>
         </Card.Header>
         <Card.Body>
           <Row>
@@ -29,62 +28,21 @@ const AlumniCard = ({ title, name, extraInfo, image, bio, year, contact }) => {
             </Col>
             <Col xs={8} md={9} className="d-flex flex-column justify-content-center">
               <h4 style={{ fontWeight: "bold" }}>{name}</h4>
+              <h6 style={{ fontStyle: "italic", color: "#aaaaaa" }}>{year}</h6>
               <p className="text-white mb-2">{extraInfo}</p>
               < br />
               <Button 
                 variant="outline-info" 
-                onClick={() => setShow(true)}
+                // link to thesis
+                onClick={() => window.open(thesis, "_blank")}
                 size="sm"
               >
-                View Profile →
+                View Thesis →
               </Button>
             </Col>
           </Row>
         </Card.Body>
       </Card>
-
-      {/* Modal */}
-      <Modal 
-        show={show} 
-        onHide={() => setShow(false)} 
-        centered 
-        size="lg"
-        contentClassName="bg-dark text-light"
-      >
-        <Modal.Header closeButton closeVariant="white" className="border-0">
-          <Modal.Title className="w-100 text-center" style={{ fontWeight: "bold", fontSize: "1.8rem" }}>
-            {name}
-          </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <Row>
-            <Col md={4} className="text-center mb-3 mb-md-0">
-              <img 
-                src={require(`../assets/members_images/${image}`)}
-                alt={name} 
-                className="rounded" 
-                style={{ width: "100%", objectFit: "cover", maxHeight: "300px" }}
-              />
-            </Col>
-            <Col md={8}>
-              <p style={{ lineHeight: "1.6" }}>{bio}</p>
-
-            </Col>
-          </Row>
-        </Modal.Body>
-        <Modal.Footer className="border-0" style={{ justifyContent: "right", padding: "1rem" }}>
-        {contact && (
-                <Button 
-                  variant="outline-info" 
-                  href={contact} 
-                  target="_blank" 
-                  className="mt-3"
-                >
-                  Contact
-                </Button>
-              )}
-        </Modal.Footer>
-      </Modal>
     </>
   );
 };

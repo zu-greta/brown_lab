@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../components/NavBar";
+import Navbar from "../../components/NavBar";
 import Hero from "./Hero";
 import Overview from "./Overview";
 import Research from "./ProjectsSection";
 import RecentPubs from "./RecentPubs";
 import ActiveMem from "./ActiveMem";
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer";
 import Funding from "./Funding";
 
 const Home = () => {

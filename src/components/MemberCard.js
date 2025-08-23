@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
 
-const MemberCard = ({ title, name, extraInfo, image, bio, contact }) => {
+const MemberCard = ({ title, name, extraInfo, image, bio, year, contact }) => {
   const [show, setShow] = useState(false);
 
   return (
@@ -30,6 +30,7 @@ const MemberCard = ({ title, name, extraInfo, image, bio, contact }) => {
             </Col>
             <Col xs={8} md={9} className="d-flex flex-column justify-content-center">
               <h4 style={{ fontWeight: "bold" }}>{name}</h4>
+              <h6 style={{ fontStyle: "italic", color: "#aaaaaa" }}>{year}</h6>
               <p className="text-white mb-2">{extraInfo}</p>
               < br />
               <Button 

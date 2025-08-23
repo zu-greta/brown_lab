@@ -13,7 +13,8 @@
         "name": "Natalie Woo",
         "extraInfo": "Super-Resolution Imaging of Cell Adhesions",
         "image": "placeholder.jpg",
-        "bio": "09/2022-Present",
+        "bio": "...",
+        "year": "09/2022-Present",
         "contact": ""
       },
       {
@@ -21,7 +22,8 @@
         "name": "Genevieve Laprade",
         "extraInfo": "Benchmarking Super-Resolution Algorithms",
         "image": "placeholder.jpg",
-        "bio": "09/2024-Present",
+        "bio": "...",
+        "year": "09/2024-Present",
         "contact": ""
       },
       {
@@ -29,7 +31,8 @@
         "name": "Cesar Villa",
         "extraInfo": "Benchmarking Expansion Microscopy",
         "image": "placeholder.jpg",
-        "bio": "",
+        "bio": "...",
+        "year": "...",
         "contact": ""
       }
     ],
@@ -39,81 +42,72 @@
         "name": "Alex Nowakowski",
         "extraInfo": "Cancer cell migration in brain and liver tissue (took an 18 month leave to attend medical school)",
         "image": "placeholder.jpg",
-        "bio": "...",
-        "year": "09/2021-12/2024",
-        "contact": ""
+        "thesis": "...",
+        "year": "09/2021-12/2024"
       },
       {
         "title": "MSc Physiology",
         "name": "Zoe Zhang",
         "extraInfo": "AI/ML to generate synthetic images of the cytoskeleton",
         "image": "placeholder.jpg",
-        "bio": "...",
-        "year": "09/2022-12/2024",
-        "contact": ""
+        "thesis": "...",
+        "year": "09/2022-12/2024"
       },
       {
         "title": "Post-Doctoral Fellow",
         "name": "Barbara Da Rocha",
         "extraInfo": "uCompass Remote Microscopy Training Program",
         "image": "placeholder.jpg",
-        "bio": "...",
-        "year": "09/2020-08/2022",
-        "contact": ""
+        "thesis": "...",
+        "year": "09/2020-08/2022"
       },
       {
         "title": "Post-Doctoral Fellow",
         "name": "Lamees Mahmoud",
         "extraInfo": "Machine Learning to Classify and Characterize Cellular Adhesions",
         "image": "placeholder.jpg",
-        "bio": "...",
-        "year": "08/2019-05/2022",
-        "contact": ""
+        "thesis": "...",
+        "year": "08/2019-05/2022"
       },
       {
         "title": "PhD Physiology",
         "name": "Alexander Kiepas",
         "extraInfo": "The role of the mechanosensitive protein, LPP, in regulating TGFβ induced increases in breast cancer cell migration",
         "image": "placeholder.jpg",
-        "bio": "...",
-        "year": "09/2015-08/2020",
-        "contact": ""
+        "thesis": "...",
+        "year": "09/2015-08/2020"
       },
       {
         "title": "MSc Physiology",
         "name": "Abira Rajah",
         "extraInfo": "Role of paxillin S273 phosphorylation in regulating cell adhesion and migration",
         "image": "placeholder.jpg",
-        "bio": "...",
-        "year": "09/2018-08/2020",
-        "contact": ""
+        "thesis": "...",
+        "year": "09/2018-08/2020"
       },
       {
         "title": "MSc Physiology",
         "name": "Rebecca Deagle",
         "extraInfo": "The role of LPP in regulating breast cancer cell migration in 3D cell culture model systems",
         "image": "placeholder.jpg",
-        "bio": "...",
-        "year": "09/2017-08/2020",
-        "contact": ""
+        "thesis": "...",
+        "year": "09/2017-08/2020"
       },
       {
         "title": "MSc Biochemistry",
         "name": "Elena Voorand",
         "extraInfo": "The role of LPP and novel binding partners in the regulation of breast cancer cell invasion",
         "image": "placeholder.jpg",
-        "bio": "...",
-        "year": "05/2017-04/2020",
-        "contact": ""
+        "thesis": "...",
+        "year": "05/2017-04/2020"
       },
       {
         "title": "MSc Physiology",
         "name": "Jessica Lyda",
         "extraInfo": "Molecular modeling and regulation of cell adhesion and migration via paxillin S273 phosphorylation",
         "image": "placeholder.jpg",
-        "bio": "...",
-        "year": "09/2017-04/2020",
-        "contact": ""
+        "thesis": "...",
+        "year": "09/2017-04/2020"
       }
     ]
   }

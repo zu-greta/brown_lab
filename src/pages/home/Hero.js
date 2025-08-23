@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Carousel } from 'react-bootstrap';
 
-import placeholder from '../assets/placeholder.jpg';
+import placeholder from '../../assets/placeholder.jpg';
 
 const Hero = () => {
     const backStyle = {
