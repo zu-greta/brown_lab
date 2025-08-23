@@ -52,7 +52,8 @@ brown_lab
 │   ├── assets/                 # images
 - TODO: add images in assets ^
 │   ├── components/             # pieces of UI to reuse (COMPONENTS)
-│   │   ├── Alumni.js           # alumni member card + modal
+│   │   ├── Alumni.js           # alumni member card 
+│   │   ├── AlmuniPDFCard.js    # post-doc fellow member card
 │   │   ├── Footer.js           # footer of all pages
 │   │   ├── MemberCard.js       # member card + modal
 │   │   ├── NavBar.js           # general page navigation bar
@@ -68,6 +69,11 @@ brown_lab
 - TODO: add info for projects and pictures ^
 │   │   └── publications.json   # saved json data file from publication fetch
 - TODO: refresh publications and get a key? ^
+│   ├── locales/                # english and french translations
+│   │   ├── en/
+│   │   │   └── translation.json        
+│   │   └── fr/
+│   │   │   └── translation.json
 │   ├── pages/                  # (PAGES and SECTIONS)
 │   │   ├── home/               # main page sections
 │   │   │   ├── ActiveMem.js        # on main page, members section (Claire Brown + Members intro)
@@ -84,6 +90,7 @@ brown_lab
 │   │   ├── Projects.js         # projects page
 │   │   └── Publications.js     # publications page
 - TODO: check ^
+│   ├── i18n.js                 # language translation
 │   ├── App.css                 # general style (eg. font-family)
 │   └── App.js                  # overall website routing
 └── .gitignore

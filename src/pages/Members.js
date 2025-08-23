@@ -6,15 +6,18 @@ import NavBarPerm from "../components/NavBarPerm";
 import MemberCard from "../components/MemberCard";
 import Footer from "../components/Footer";
 import AlumniCard from "../components/AlmuniCard";
+import AlumniPDFCard from "../components/AlmuniPDFCard";
 
 import membersData from "../data/members.json"; // <-- IMPORT THE FILE
 
 const Members = () => {
   const activeMembers = membersData.activeMembers;
   const alumniMembers = membersData.alumniMembers;
-  const claireBrown = activeMembers.filter(m => m.name === "Dr. Claire Brown");
-  const filteredActiveMembers = activeMembers.filter(m => m.name !== "Dr. Claire Brown");
 
+  const claireBrown = activeMembers.filter(m => m.name === "Dr. Claire Brown");
+  const filteredActiveMembers = activeMembers.filter(m => (m.name !== "Dr. Claire Brown"));
+  const postDoctoralFellows = alumniMembers.filter(m => m.title === "Post-Doctoral Fellow");
+  const filteredAlumniMembers = alumniMembers.filter(m => m.title !== "Post-Doctoral Fellow");
 
   return (
     <div style={{ backgroundColor: "rgb(33, 37, 37)", color: "white" }}>
@@ -50,9 +53,19 @@ const Members = () => {
         {/* Alumni Section */}
         <h2>Alumni</h2>
         <Row>
-          {alumniMembers.map((member, index) => (
+          {filteredAlumniMembers.map((member, index) => (
             <Col key={index} xs={12} md={6} className="mb-4">
               <AlumniCard {...member} />
+            </Col>
+          ))}
+        </Row>
+
+        {/* Alumni Section */}
+        <h2>Alumni Post-Doctoral Fellows</h2>
+        <Row>
+          {postDoctoralFellows.map((member, index) => (
+            <Col key={index} xs={12} md={6} className="mb-4">
+              <AlumniPDFCard {...member} />
             </Col>
           ))}
         </Row>

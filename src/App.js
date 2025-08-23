@@ -1,4 +1,5 @@
 import './App.css';
+import "./i18n";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Publications from "./pages/Publications";

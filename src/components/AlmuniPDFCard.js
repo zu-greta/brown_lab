@@ -3,11 +3,12 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Link } from "react-router-dom";
 
-const AlumniCard = ({ title, name, extraInfo, image, thesis, year }) => {
+const AlumniPDFCard = ({ title, name, extraInfo, image, thesis, year }) => {
   return (
     <>
-      {/* Alumni Member Card */}
+      {/* Alumni Post Doc Fellow Member Card */}
       <Card 
         className="my-3 p-3 shadow-sm" 
         style={{ backgroundColor: "rgb(44, 48, 48)", color: "white", border: "1px solid #ccc", borderRadius: "10px", }}
@@ -30,14 +31,10 @@ const AlumniCard = ({ title, name, extraInfo, image, thesis, year }) => {
               <h6 style={{ fontStyle: "italic", color: "#aaaaaa" }}>{year}</h6>
               <p className="text-white mb-2">{extraInfo}</p>
               < br />
-              <Button 
-                variant="outline-info" 
-                // link to thesis
-                onClick={() => window.open(thesis, "_blank")}
-                size="sm"
-              >
-                View Thesis →
-              </Button>
+
+              <Link to="/projects">
+                <Button variant="outline-info" size="sm">View Projects →</Button>
+              </Link>
             </Col>
           </Row>
         </Card.Body>
@@ -46,4 +43,4 @@ const AlumniCard = ({ title, name, extraInfo, image, thesis, year }) => {
   );
 };
 
-export default AlumniCard;
+export default AlumniPDFCard;
