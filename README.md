@@ -74,6 +74,7 @@ brown_lab
 │   │   │   └── translation.json        
 │   │   └── fr/
 │   │   │   └── translation.json
+- TODO: add french to everything! ^
 │   ├── pages/                  # (PAGES and SECTIONS)
 │   │   ├── home/               # main page sections
 │   │   │   ├── ActiveMem.js        # on main page, members section (Claire Brown + Members intro)
@@ -111,11 +112,51 @@ brown_lab
 In the backend directory, to fetch the updated publications, you can run:
 - `node fetch_and_save.js`
 
+The next time you push and deploy, the new publications should show up
+
 ---
 
 # instructions for updating members and projects data
+Edit the corresponding file using the template by adding to the current file (note: don't forget to add commas between each entry), save the changes and push/deploy the project again.
 
-TODO: paste a template of the json files and formats expected
+### Members (src/data/members.json)
+- There are 2 different types of members: activeMembers and alumniMembers. 
+> activeMembers:
+```
+{
+    "title": "POSITION",
+    "name": "NAME",
+    "extraInfo": "PROJECT NAME (appears on card)",
+    "image": "IMAGE PATH WITH EXTENSION PLACED UNDER src/assets/members_images/",
+    "bio": "BIO BLURB (appears on modal - view profile)",
+    "year": "YEARS AT THE LAB",
+    "contact": "CONTACT LINK"
+}
+```
+
+> alumniMembers (note: if the member is a post-doctoral fellow, make sure the "title" is "Post-Doctoral Fellow"):
+```
+{
+    "title": "POSITION",
+    "name": "NAME",
+    "extraInfo": "PROJECT",
+    "image": "IMAGE PATH WITH EXTENSION PLACED UNDER src/assets/members_images/",
+    "thesis": "LINK TO THESIS",
+    "year": "YEARS AT THE LAB"
+},
+{
+    "title": "Post-Doctoral Fellow",
+    "name": "NAME",
+    "extraInfo": "PROJECT",
+    "image": "IMAGE PATH WITH EXTENSION PLACED UNDER src/assets/members_images/",
+    "thesis": "...",
+    "year": "YEARS AT THE LAB"
+}
+```
+
+### Projects (src/data/projects.json)
+- There are 2 different types of projects: current and past.
+**TODO**
 
 ---
 
