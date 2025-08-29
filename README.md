@@ -161,13 +161,45 @@ Edit the corresponding file using the template by adding to the current file (no
 ---
 
 # instructions for creating new pages
+*Note*: when editing the NavBar, ensure to add a french/english version in the `src/locales/en/translaton.json` and `src/locales/fr/translaton.json` files.
 
-TODO: instructions on how to add a new page to the site (creating a page, where to put it, routing etc)
+New sections on the Main page: 
+- can be added to `src/pages/home/Home.js` for routing and the file placed under `src/pages/home/`
+- if needed, add it to the NavBar for easy access by modifying `src/components/NavBar.js` and adding a Nav.Link to the `<Nav className="me-auto">` list
+- Refer to ActiveMem, Funding, Hero, Overview, ProjectsSection or RecentPub for reference
+
+New pages:
+- can be added to `src/App.js` for routing and the file placed under `src/pages/`
+- if needed, add it to the NavBar and NavBarPerm for easy access by modifying `src/components/NavBar.js` and `src/components/NavBarPerm.js` and adding a Nav.Link to the section with the NavDropdown links.
+- refer to Members, Projects or Publications for reference
 
 ---
 
 # instructions for cloning and deploying the website on github pages of any repository
 
-TODO
+### forking a repository
+fork the repo and clone it. then:
+- `git remote add upstream git@github.com:zu-greta/brown_lab.git`
+- `git remote -v`
+
+to sync it with the original repo
+- `git fetch upstream`
+- `git checkout main`
+- `git merge upstream/main`
+- `git push origin main`
+
+### cloning a repository to make changes
+- `git clone <https://github.com/zu-greta/brown_lab.git or git@github.com:zu-greta/brown_lab.git if ssh keys set up>` (find the <>Code button on Github and copy the URL to clone)
+- `git pull` for getting changes made in the repository by others
+- `git status` to check the status
+- `git add .` to add all changes made, `git commit -m "<MESSAGE>"` to commit the changes, `git push` to push them to the repository
+
+### setup github pages for deployement
+
+- in the repository on Github, find the Settings tab at the top and then the Pages tab on the left bar. 
+
+[refer-to-this](https://github.com/gitname/react-gh-pages)
+
+TODO - test
 
 ---
