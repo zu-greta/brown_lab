@@ -1,10 +1,13 @@
 import React from "react";
 // import { Carousel } from 'react-bootstrap';
 import Image from 'react-bootstrap/Image';
+import { useTranslation } from "react-i18next";
 
 import placeholder from '../../assets/placeholder.jpg';
 
 const Overview = () => {
+    const { t } = useTranslation();
+
     const sectionStyle = {
         color: 'white',
         padding: '6vh 10vh',
@@ -25,7 +28,7 @@ const Overview = () => {
             {/* Overview Section */}
             <div style={sectionStyle}>
                 <div style={descriptionStyle}>
-                    <h1>Lab Overview</h1>
+                    <h1>{t("labOverview")}</h1>
                     <br />
                     <h3>Research Area: Molecular & Cell Biology</h3>
                     {/* horizontal seperator */}

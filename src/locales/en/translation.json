@@ -2,8 +2,33 @@
   "labOverview": "Lab Overview",
   "recentPublications": "Recent Publications",
   "currentProjects": "Current Projects",
+  "pastProjects": "Past Projects",
   "projects": "Projects",
   "publications": "Publications",
   "members": "Members",
-  "relatedSites": "Related Sites"
+  "relatedSites": "Related Sites",
+  "ourMembers": "Our Members",
+  "fundingOrg": "Funding Organizations",
+
+  "contactUs": "Contact Us",
+  "email": "Email",
+  "phone": "Phone",
+  "address": "Address",
+  "allRightsReserved": "All Rights Reserved",
+
+  "brownLabMemberDirectory": "Brown Lab Member Directory",
+  "meetTheMembers": "Meet the members of the lab!",
+  "activeMembers": "Active Members",
+  "alumni": "Alumni",
+  "alumniPostDoctoralFellows": "Alumni Post-Doctoral Fellows",
+
+  "readMore": "Read More",
+  "allPublications": "All Publications",
+  "seeFullProfile": "See Full Profile",
+  "seeAllMembers": "See All Members",
+  "learnMore": "Learn More",
+  "viewProfile": "View Profile",
+  "viewProjects": "View Projects",
+  "viewThesis": "View Thesis",
+  "contact": "Contact"
 }

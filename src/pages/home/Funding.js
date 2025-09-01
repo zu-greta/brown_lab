@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { useTranslation } from "react-i18next";
 
 import czi from '../../assets/CZI.png';
 import nserc from '../../assets/NSERC.png';
@@ -24,10 +25,12 @@ const fundingOrganizations = [
 ];
 
 const Funding = () => {
+  const { t } = useTranslation();
+
   return (
     <div style={{ backgroundColor: 'rgb(33, 37, 37)', padding: "3% 0" }}>
       <Container>
-        <h2 className="text-center text-white mb-4">Funding Organizations</h2>
+        <h2 className="text-center text-white mb-4">{t("fundingOrg")}</h2>
         <Row className="justify-content-center">
           {fundingOrganizations.map((org, index) => (
             <Col md={6} lg={5} key={index} className="mb-4">
@@ -46,7 +49,7 @@ const Funding = () => {
                   <Card.Title>{org.name}</Card.Title>
                   <Card.Text>{org.description}</Card.Text>
                   <Button variant="outline-info" href={org.link} target="_blank">
-                    Learn More
+                    {t("learnMore")}
                   </Button>
                 </Card.Body>
               </Card>

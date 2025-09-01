@@ -4,6 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer";
 import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import placeholder from "../assets/placeholder.jpg";
 
@@ -11,6 +12,7 @@ import projectsData from "../data/projects.json"; // <-- IMPORT THE FILE
 
 const Projects = () => {
   const [search] = useState("");
+  const { t } = useTranslation();
 
   const resolveImage = (img) => {
     if (img === "placeholder.jpg") return placeholder;
@@ -64,7 +66,7 @@ const Projects = () => {
                 <div style={styles.memberName}>{member.name}</div>
                 <Link to={`/members`}>
                   <Button variant="outline-info" size="sm">
-                    View Profile →
+                    {t("viewProfile")} →
                   </Button>
                 </Link>
               </div>
@@ -80,11 +82,11 @@ const Projects = () => {
       <NavBarPerm />
       <div style={styles.container}>
         {/* ---- Current Projects ---- */}
-        <h2 style={styles.title}>Current Projects</h2>
+        <h2 style={styles.title}>{t("currentProjects")}</h2>
         {currentProjects.map(renderProjectRow)}
 
         {/* ---- Past Projects ---- */}
-        <h2 style={styles.title}>Past Projects</h2>
+        <h2 style={styles.title}>{t("pastProjects")}</h2>
         {pastProjects.map(renderProjectRow)}
       </div>
       <Footer />

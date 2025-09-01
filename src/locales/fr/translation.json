@@ -2,8 +2,33 @@
   "labOverview": "Présentation du laboratoire",
   "recentPublications": "Publications récentes",
   "currentProjects": "Projets en cours",
+  "pastProjects": "Projets passés",
   "projects": "Projets",
   "publications": "Publications",
   "members": "Membres",
-  "relatedSites": "Sites connexes"
+  "relatedSites": "Sites connexes",
+  "ourMembers": "Nos membres",
+  "fundingOrg": "Organisations de financement",
+
+  "contactUs": "Contactez-nous",
+  "email": "Courriel électronique",
+  "phone": "Numéro de téléphone",
+  "address": "Adresse",
+  "allRightsReserved": "Tous droits réservés",
+
+  "brownLabMemberDirectory": "Annuaire des membres du laboratoire Brown",
+  "meetTheMembers": "Rencontrez les membres du laboratoire !",
+  "activeMembers": "Membres actifs",
+  "alumni": "Anciens membres",
+  "alumniPostDoctoralFellows": "Anciens membres postdoctoraux",
+
+  "readMore": "Lire la suite",
+  "allPublications": "Toutes les publications",
+  "seeFullProfile": "Voir le profil complet",
+  "seeAllMembers": "Voir tous les membres",
+  "learnMore": "En savoir plus",
+  "viewProfile": "Voir le profil",
+  "viewProjects": "Voir les projets",
+  "viewThesis": "Voir la thèse",
+  "contact": "Contact"
 }

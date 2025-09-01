@@ -1,7 +1,10 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
+import { useTranslation } from "react-i18next";
 
 const PublicationCard = ({ title, description, date, link }) => {
+  const { t } = useTranslation();
+
   return (
     <div style={styles.cardContainer}>
       <div style={styles.cardContent}>
@@ -9,7 +12,7 @@ const PublicationCard = ({ title, description, date, link }) => {
         <p>{description}</p>
                  {/* button read more leads to the link */}
         <a href={link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-          <Button variant="outline-info">Read More →</Button>
+          <Button variant="outline-info">{t("readMore")} →</Button>
         </a>
       </div>
     </div>

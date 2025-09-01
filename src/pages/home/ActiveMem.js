@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
+import { useTranslation } from "react-i18next";
 
 import placeholder from '../../assets/placeholder.jpg';
 import claire from '../../assets/members_images/claire_brown.jpg';
 
 const ActiveMem = () => {
+    const { t } = useTranslation();
+
     const sectionStyle = {
         display: 'flex',
         flexDirection: 'row',
@@ -40,20 +43,20 @@ const ActiveMem = () => {
                         images to extract quantitative data measuring protein distributions, dynamics and interactions.
                     </p>
                     <Button as={Link} to="/members" variant="outline-info">
-                        See full profile →
+                        {t("seeFullProfile")} →
                     </Button>
                 </div>
             </div>
 
             <div style={sectionStyle}>
                 <div style={descriptionStyle}>
-                    <h2>Our Members</h2>
+                    <h2>{t("ourMembers")}</h2>
                     <p>
                         Our team consists of talented and driven individuals who are passionate about advancing our mission.
                         We work together on exciting projects and contribute to a collaborative environment that values creativity and innovation.
                     </p>
                     <Link to="/members">
-                        <Button variant="outline-info" >See All Members →</Button>
+                        <Button variant="outline-info" >{t("seeAllMembers")} →</Button>
                     </Link>
                     <br />
                     <br />

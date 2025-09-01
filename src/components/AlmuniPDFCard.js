@@ -4,8 +4,11 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const AlumniPDFCard = ({ title, name, extraInfo, image, thesis, year }) => {
+  const { t } = useTranslation();
+
   return (
     <>
       {/* Alumni Post Doc Fellow Member Card */}
@@ -33,7 +36,7 @@ const AlumniPDFCard = ({ title, name, extraInfo, image, thesis, year }) => {
               < br />
 
               <Link to="/projects">
-                <Button variant="outline-info" size="sm">View Projects →</Button>
+                <Button variant="outline-info" size="sm">{t("viewProjects")} →</Button>
               </Link>
             </Col>
           </Row>

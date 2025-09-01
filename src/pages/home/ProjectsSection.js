@@ -3,16 +3,18 @@ import ProjectCard from "../../components/ProjectCard";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useTranslation } from "react-i18next";
 
 import projectsData from "../../data/projects.json"; // <-- IMPORT THE FILE
 
 const ProjectsSection = () => {
+    const { t } = useTranslation();
     const projects = projectsData.current;
 
     return (
         <div style={{ backgroundColor: 'rgb(33, 37, 37)', padding: "5% 0" }}>
         <Container>
-          <h2 className="text-center text-white mb-4">Current Projects</h2>
+          <h2 className="text-center text-white mb-4">{t("currentProjects")}</h2>
             <Row className="justify-content-center">
             {projects.map((org, index) => (  
                 <Col md={6} lg={4} key={index} className="mb-4">

@@ -7,10 +7,12 @@ import MemberCard from "../components/MemberCard";
 import Footer from "../components/Footer";
 import AlumniCard from "../components/AlmuniCard";
 import AlumniPDFCard from "../components/AlmuniPDFCard";
+import { useTranslation } from "react-i18next";
 
 import membersData from "../data/members.json"; // <-- IMPORT THE FILE
 
 const Members = () => {
+  const { t } = useTranslation();
   const activeMembers = membersData.activeMembers;
   const alumniMembers = membersData.alumniMembers;
 
@@ -23,8 +25,8 @@ const Members = () => {
     <div style={{ backgroundColor: "rgb(33, 37, 37)", color: "white" }}>
       <NavBarPerm />
       <Container className="py-5">
-        <h1>Brown Lab Member Directory</h1>
-        <p className="text-white">Meet the members of the lab!</p>
+        <h1>{t("brownLabMemberDirectory")}</h1>
+        <p className="text-white">{t("meetTheMembers")}</p>
 
         {/* Claire Brown Section */}
         <h2>Claire Brown</h2>
@@ -39,7 +41,7 @@ const Members = () => {
         <hr style={{ borderTop: "2px solid #ccc", margin: "50px 0" }} />
 
         {/* Active Members Section */}
-        <h2>Active Members</h2>
+        <h2>{t("activeMembers")}</h2>
         <Row>
           {filteredActiveMembers.map((member, index) => (
             <Col key={index} xs={12} md={6} className="mb-4">
@@ -51,7 +53,7 @@ const Members = () => {
         <hr style={{ borderTop: "2px solid #ccc", margin: "50px 0" }} />
 
         {/* Alumni Section */}
-        <h2>Alumni</h2>
+        <h2>{t("alumni")}</h2>
         <Row>
           {filteredAlumniMembers.map((member, index) => (
             <Col key={index} xs={12} md={6} className="mb-4">
@@ -61,7 +63,7 @@ const Members = () => {
         </Row>
 
         {/* Alumni Section */}
-        <h2>Alumni Post-Doctoral Fellows</h2>
+        <h2>{t("alumniPostDoctoralFellows")}</h2>
         <Row>
           {postDoctoralFellows.map((member, index) => (
             <Col key={index} xs={12} md={6} className="mb-4">

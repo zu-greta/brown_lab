@@ -161,7 +161,7 @@ Edit the corresponding file using the template by adding to the current file (no
 ---
 
 # instructions for creating new pages
-*Note*: when editing the NavBar, ensure to add a french/english version in the `src/locales/en/translaton.json` and `src/locales/fr/translaton.json` files.
+*Note*: when editing the NavBar, ensure to add a french/english version in the `src/locales/en/translaton.json` and `src/locales/fr/translaton.json` files. refer to [fr-en-instructions](#instructions-for-french-and-english-translations)
 
 New sections on the Main page: 
 - can be added to `src/pages/home/Home.js` for routing and the file placed under `src/pages/home/`
@@ -172,6 +172,13 @@ New pages:
 - can be added to `src/App.js` for routing and the file placed under `src/pages/`
 - if needed, add it to the NavBar and NavBarPerm for easy access by modifying `src/components/NavBar.js` and `src/components/NavBarPerm.js` and adding a Nav.Link to the section with the NavDropdown links.
 - refer to Members, Projects or Publications for reference
+
+---
+
+# instructions for french and english translations
+- add a french/english version in the `src/locales/en/translaton.json` and `src/locales/fr/translaton.json` files by adding a new variable name with the english and french translations accordingly. 
+- in the page/component/navbar you want the text to appear in, instead of writing english or french, use the variable by doing `{t("<VARIABLE>")}`.
+- make sure to first add `import { useTranslation } from "react-i18next";` at the top of the file and `const { t } = useTranslation();` before the `return` statement
 
 ---
 

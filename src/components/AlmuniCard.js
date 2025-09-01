@@ -3,8 +3,11 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useTranslation } from "react-i18next";
 
 const AlumniCard = ({ title, name, extraInfo, image, thesis, year }) => {
+  const { t } = useTranslation();
+
   return (
     <>
       {/* Alumni Member Card */}
@@ -36,7 +39,7 @@ const AlumniCard = ({ title, name, extraInfo, image, thesis, year }) => {
                 onClick={() => window.open(thesis, "_blank")}
                 size="sm"
               >
-                View Thesis →
+                {t("viewThesis")} →
               </Button>
             </Col>
           </Row>

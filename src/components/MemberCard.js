@@ -4,9 +4,11 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
+import { useTranslation } from "react-i18next";
 
 const MemberCard = ({ title, name, extraInfo, image, bio, year, contact }) => {
   const [show, setShow] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -38,7 +40,7 @@ const MemberCard = ({ title, name, extraInfo, image, bio, year, contact }) => {
                 onClick={() => setShow(true)}
                 size="sm"
               >
-                View Profile →
+                {t("viewProfile")} →
               </Button>
             </Col>
           </Row>
@@ -82,7 +84,7 @@ const MemberCard = ({ title, name, extraInfo, image, bio, year, contact }) => {
                   target="_blank" 
                   className="mt-3"
                 >
-                  Contact
+                  {t("contact")}
                 </Button>
               )}
         </Modal.Footer>
