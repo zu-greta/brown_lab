@@ -40,9 +40,9 @@ const Publications = () => {
               <div
                 style={{
                   ...styles.centerSection,
-                  alignItems: index % 2 === 0 ? "flex-start" : "flex-end",
-                  marginRight: index % 2 === 0 ? "20px" : "0",
-                  marginLeft: index % 2 === 0 ? "0" : "20px",
+                  left: index % 2 !== 0 ? "calc(50% + 10px)" : "auto",    
+                  right: index % 2 === 0 ? "calc(50% + 10px)" : "auto",
+                  textAlign: index % 2 === 0 ? "left" : "right",
                 }}
               >
                 <div style={styles.tilda}>~ {publication.date} ~</div>
@@ -90,15 +90,15 @@ const styles = {
       flex: "0 0 40%",
       maxWidth: "40%",
       padding: "1%",
-    },
+    }, 
     centerSection: {
-      flex: "0 0 20%",
-      maxWidth: "20%",
-      display: "flex",
-      flexDirection: "column",
+      position: "absolute",   
+      top: "50%",
+      transform: "translateY(-50%)",
       fontSize: "24px",
       color: "white",
-    },  
+      zIndex: 2,
+    },
     tilda: {
       fontSize: "90%",
       color: "lightgray",

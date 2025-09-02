@@ -60,7 +60,6 @@ brown_lab
 │   │   ├── NavBarPerm.js       # projects, publications, members page navigation bar
 │   │   ├── ProjectCard.js      # project card
 │   │   ├── PublicationCard.js  # publication card
-- TODO: check 
 │   │   └──ScrollToTop.js       # reset the scroll of the page
 │   ├── data/
 │   │   ├── members.json        # data json file of members (active and alumni)
@@ -68,13 +67,11 @@ brown_lab
 │   │   ├── projects.json        # data json file of projects (current and past)
 - TODO: add info for projects and pictures ^
 │   │   └── publications.json   # saved json data file from publication fetch
-- TODO: refresh publications and get a key? ^
 │   ├── locales/                # english and french translations
 │   │   ├── en/
 │   │   │   └── translation.json        
 │   │   └── fr/
 │   │   │   └── translation.json
-- TODO: add french to everything! ^
 │   ├── pages/                  # (PAGES and SECTIONS)
 │   │   ├── home/               # main page sections
 │   │   │   ├── ActiveMem.js        # on main page, members section (Claire Brown + Members intro)
@@ -86,11 +83,9 @@ brown_lab
 - TODO: text and images ^
 │   │   │   ├── ProjectsSection.js  # on main page, current projects section
 │   │   │   └── RecentPubs.js       # on main page, recent publications section
-- TODO: check ^
 │   │   ├── Members.js          # members page
 │   │   ├── Projects.js         # projects page
 │   │   └── Publications.js     # publications page
-- TODO: check ^
 │   ├── i18n.js                 # language translation
 │   ├── App.css                 # general style (eg. font-family)
 │   └── App.js                  # overall website routing
