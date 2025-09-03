@@ -1,16 +1,25 @@
 # Brown Lab website
 This project contains the code to the Brown Lab website. This README contains information on how to:
-- run, test and deploy the website 
-- the code directory 
+- [run, test and deploy the website](#instructions-for-running-and-deployement) 
+- [the code directory](#code-structure) 
 - updating data:
-    - fetch and updating publications data
-    - updating members and projects data
-- updating the website 
-- deploying the site to github pages
+    - [fetch and updating publications data](#instructions-for-publications-fetching-and-setup)
+    - [updating members and projects data](#instructions-for-updating-members-and-projects-data)
+- [updating the website](#instructions-for-creating-new-pages) 
+- [deploying the site to github pages](#instructions-for-cloning-and-deploying-the-website-on-github-pages-of-any-repository)
+- [troubleshooting](#troubleshooting)
 
 ---
 
 # instructions for running and deployement
+In the project durectory, you can run:
+
+### `npm install`
+
+Installs all the dependencies needed for the project. Run `npm install <LIBRARY TO INSTALL>` for any further libraries you wish to add.
+
+---
+
 In the project directory, you can run:
 
 ### `npm start`
@@ -29,13 +38,6 @@ Open [https://zu-greta.github.io/brown_lab/](https://zu-greta.github.io/brown_la
 
 ---
 
-In case of problems:
-- `rm -rf node_modules package-lock.json`
-- `npm install`
-- `npm start`
-
----
-
 # code structure
 
 ```
@@ -50,7 +52,6 @@ brown_lab
 │   └── server.js               # runs the function to fetch and save publications
 ├── src/                        # source code of the project
 │   ├── assets/                 # images
-- TODO: add images in assets ^
 │   ├── components/             # pieces of UI to reuse (COMPONENTS)
 │   │   ├── Alumni.js           # alumni member card 
 │   │   ├── AlmuniPDFCard.js    # post-doc fellow member card
@@ -63,9 +64,7 @@ brown_lab
 │   │   └──ScrollToTop.js       # reset the scroll of the page
 │   ├── data/
 │   │   ├── members.json        # data json file of members (active and alumni)
-- TODO: add info for members and pictures ^
 │   │   ├── projects.json        # data json file of projects (current and past)
-- TODO: add info for projects and pictures ^
 │   │   └── publications.json   # saved json data file from publication fetch
 │   ├── locales/                # english and french translations
 │   │   ├── en/
@@ -77,10 +76,8 @@ brown_lab
 │   │   │   ├── ActiveMem.js        # on main page, members section (Claire Brown + Members intro)
 │   │   │   ├── Funding.js          # on main page, funding organizations information
 │   │   │   ├── Hero.js             # on main page, carousel
-- TODO: add slogan? ^
 │   │   │   ├── Home.js             # main page setup and routing
 │   │   │   ├── Overview.js         # on main page, overview of the lab section
-- TODO: text and images ^
 │   │   │   ├── ProjectsSection.js  # on main page, current projects section
 │   │   │   └── RecentPubs.js       # on main page, recent publications section
 │   │   ├── Members.js          # members page
@@ -197,11 +194,28 @@ to sync it with the original repo
 - `git add .` to add all changes made, `git commit -m "<MESSAGE>"` to commit the changes, `git push` to push them to the repository
 
 ### setup github pages for deployement
+- fork and then clone the repository into your own Github. make sure the visibility is set to Public
+- run `npm install` for all the dependencies
+- follow instructions from [this-page](https://github.com/gitname/react-gh-pages), ignoring instructions for creating a new app:
+    - in `package.json`, find the homepage link and modify it to match you github repository for example: `"homepage": "http://zu-greta.github.io/brown_lab"`. the other important lines for the deployement process should already be there:
+    ```
+    "start": "npm-run-all --parallel start:frontend start:backend",
+    "start:frontend": "react-scripts start",
+    "start:backend": "cd backend && node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    ```
+    - in the repository on Github, find the Settings tab at the top and then the Pages tab on the left bar. select the source as "Deploy from a branch", the Branch should be "gh-pages" "/(root)"
+- for extra questions and troubleshooting: [react-app-deploy](https://create-react-app.dev/docs/deployment/)
 
-- in the repository on Github, find the Settings tab at the top and then the Pages tab on the left bar. 
+---
 
-[refer-to-this](https://github.com/gitname/react-gh-pages)
+# troubleshooting
+Troubleshooting (MacBook problems with downloading files from the cloud):
+- `rm -rf node_modules package-lock.json`
+- `npm install`
+- `npm start`
 
-TODO - test
+To avoid the above problem, clone the repository into a folder named <NAME OF YOUR FOLDER>.nosync
 
 ---
